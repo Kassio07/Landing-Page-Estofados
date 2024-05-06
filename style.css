@@ -201,6 +201,9 @@ header .headerImg {
     left: 50%;
     transform: translate(-50%);
   }
+  header .headerText .textCaixa2 div {
+    font-size: 1.3rem;
+  }
 }
 body {
   font-family: sans-light;
