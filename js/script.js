@@ -8,4 +8,5 @@ let menu = c('ul')
 
 btnOpner.addEventListener('click', (e)=>{
     menu.classList.toggle('oper')
+    
 })

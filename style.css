@@ -49,11 +49,12 @@ nav ul {
 }
 nav ul li {
   position: relative;
-  width: 100%;
+  width: 120px;
+  text-align: center;
 }
 nav ul li a {
   display: block;
-  padding: 10px 25px;
+  padding: 10px 15px;
   font-size: 1.2rem;
   transition: 0.5s;
 }
@@ -68,7 +69,7 @@ nav ul .home::after {
   height: 4px;
   background-color: #163179;
   bottom: 9px;
-  right: 25px;
+  left: 57px;
 }
 nav .btnMobil {
   width: 30px;
@@ -99,7 +100,8 @@ nav .btnMobil div {
     height: 100vh;
     right: 0;
     bottom: 0px;
-    background-color: #163179;
+    background-color: #000;
+    opacity: 0.9;
     transition: 0.8s;
     z-index: 999;
   }
@@ -108,6 +110,9 @@ nav .btnMobil div {
   }
   nav ul li a {
     color: #fff;
+  }
+  nav ul .home::after {
+    display: none;
   }
   nav .btnMobil {
     display: flex;
