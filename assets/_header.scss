@@ -65,6 +65,62 @@ nav{
     }
 
 }
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    height: 100vh;
+    padding: 30px 0;
+    .headerText{
+        flex: 1;
+        .textCaixa1{
+            P{
+                margin-bottom: 2rem;
+
+            }
+            
+            button{
+                padding: 12px 50px;
+                // width: 50%;
+                margin-bottom: 2rem;
+                font-size: 1rem;
+                text-transform: uppercase;
+                box-shadow: rgba(0, 0, 0, 0.366) 0px 22px 70px 4px;
+            }
+        }
+        
+        .textCaixa2{
+            display: flex;
+            flex-direction: row;
+            font-family: sans-regular;
+            color: #00000090;
+            font-size: 0.9rem;
+            gap: 25px;
+            
+            div{
+                
+                i{
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+    
+    .headerImg{
+        flex: 1;
+    }
+}
+
+.btnCtt{
+    background-color: $terciary-ligth;
+    color: $primary-light;
+    font-family: sans-bold;
+    border-radius: 5px;
+}
+
 @media (max-width: 768px){
     nav{
 
@@ -105,59 +161,32 @@ nav{
     .oper{
         width: 100vw;
     }
-}
 
-header{
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    height: 100vh;
-    padding: 30px 0;
-    .headerText{
-        flex: 1;
+    header{
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        .headerText{
         .textCaixa1{
-            P{
-                margin-bottom: 2rem;
+            // text-align: center;
 
+            h1{
+                font-size: 1.8rem;
             }
-
-            button{
-                padding: 12px 50px;
-                // width: 50%;
-                margin-bottom: 2rem;
-                font-size: 1rem;
-                text-transform: uppercase;
-                box-shadow: rgba(0, 0, 0, 0.366) 0px 22px 70px 4px;
+            p{
+            font-size: 0.8rem;
             }
         }
 
         .textCaixa2{
-            display: flex;
-            flex-direction: row;
-            font-family: sans-regular;
-            color: #00000090;
-            font-size: 0.9rem;
-            gap: 25px;
-
+            flex-direction: column;
+            margin-bottom: 15px;
             div{
-
-                i{
-                    margin-right: 7px;
-                }
+                font-size: 0.8rem;
+              
             }
         }
     }
-
-    .headerImg{
-        flex: 1;
     }
 }
-
-.btnCtt{
-    background-color: $terciary-ligth;
-    color: $primary-light;
-    font-family: sans-bold;
-    border-radius: 5px;
-}
-
 

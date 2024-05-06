@@ -92,39 +92,6 @@ nav .btnMobil div {
   background-color: #163179;
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 35px;
-    position: fixed;
-    width: 0vw;
-    height: 100vh;
-    right: 0;
-    bottom: 0px;
-    background-color: #000;
-    opacity: 0.9;
-    transition: 0.8s;
-    z-index: 999;
-  }
-  nav ul li {
-    text-align: center;
-  }
-  nav ul li a {
-    color: #fff;
-  }
-  nav ul .home::after {
-    display: none;
-  }
-  nav .btnMobil {
-    display: flex;
-    cursor: pointer;
-  }
-  .oper {
-    width: 100vw;
-  }
-}
 header {
   display: flex;
   flex-direction: row;
@@ -167,6 +134,56 @@ header .headerImg {
   border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    position: fixed;
+    width: 0vw;
+    height: 100vh;
+    right: 0;
+    bottom: 0px;
+    background-color: #000;
+    opacity: 0.9;
+    transition: 0.8s;
+    z-index: 999;
+  }
+  nav ul li {
+    text-align: center;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  nav ul .home::after {
+    display: none;
+  }
+  nav .btnMobil {
+    display: flex;
+    cursor: pointer;
+  }
+  .oper {
+    width: 100vw;
+  }
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .headerText .textCaixa1 h1 {
+    font-size: 1.8rem;
+  }
+  header .headerText .textCaixa1 p {
+    font-size: 0.8rem;
+  }
+  header .headerText .textCaixa2 {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  header .headerText .textCaixa2 div {
+    font-size: 0.8rem;
+  }
+}
 body {
   font-family: sans-light;
   background-color: #fff;
