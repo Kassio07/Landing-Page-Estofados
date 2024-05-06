@@ -174,7 +174,12 @@ header .headerImg {
     font-size: 1.8rem;
   }
   header .headerText .textCaixa1 p {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
+  }
+  header .headerText .textCaixa1 button {
+    padding: 12px 20px;
+    margin-bottom: 2rem;
+    font-size: 1rem;
   }
   header .headerText .textCaixa2 {
     flex-direction: column;
@@ -182,6 +187,19 @@ header .headerImg {
   }
   header .headerText .textCaixa2 div {
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 576px) {
+  nav .logoImg img {
+    width: 90px;
+  }
+  header .headerText .textCaixa1 h1 {
+    font-size: 1.5rem;
+  }
+  header .headerText .textCaixa1 button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
 body {
