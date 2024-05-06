@@ -3,6 +3,11 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    position: fixed;
+    background-color: $primary-light;
+    width: 100vw;
+    z-index: 88;
     .logoImg{
         padding: 10px 0;
         img{
@@ -73,7 +78,7 @@ header{
     flex-direction: row;
     align-items: start;
     height: 100vh;
-    padding: 30px 0;
+    padding: 200px 0 0 0;
     .headerText{
         flex: 1;
         .textCaixa1{
