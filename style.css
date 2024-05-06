@@ -193,8 +193,11 @@ header .headerImg {
   nav .logoImg img {
     width: 90px;
   }
+  header .headerText {
+    margin-bottom: 4rem;
+  }
   header .headerText .textCaixa1 h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   header .headerText .textCaixa1 button {
     position: relative;
@@ -202,7 +205,7 @@ header .headerImg {
     transform: translate(-50%);
   }
   header .headerText .textCaixa2 div {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 body {
