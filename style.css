@@ -39,9 +39,13 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   background-color: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 10px;
+  position: fixed;
   width: 100vw;
+  top: 0;
   z-index: 88;
 }
 nav .logoImg {
@@ -101,7 +105,8 @@ header {
   flex-direction: row;
   align-items: start;
   height: 100vh;
-  padding: 200px 0 0 0;
+  padding: 30px 0;
+  margin-top: 100px;
 }
 header .headerText {
   flex: 1;
