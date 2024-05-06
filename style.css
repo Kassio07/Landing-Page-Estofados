@@ -155,7 +155,6 @@ header .headerImg {
     right: 0;
     bottom: 0px;
     background-color: #000;
-    opacity: 0.9;
     transition: 0.8s;
     z-index: 999;
   }
