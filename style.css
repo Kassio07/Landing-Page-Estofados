@@ -131,6 +131,7 @@ header .headerText .textCaixa2 {
 }
 header .headerText .textCaixa2 div i {
   margin-right: 7px;
+  color: #163179;
 }
 header .headerImg {
   flex: 1;
