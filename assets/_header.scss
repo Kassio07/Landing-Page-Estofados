@@ -1,0 +1,104 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logoImg{
+    
+        img{
+            width: 120px;
+        }
+    }
+    
+    ul{
+        display: flex;
+        flex-direction:row;
+        // gap: 35px;
+        
+        li{
+            position: relative;
+            width: 100%;
+            a{
+                display: block;
+                padding: 10px 25px;
+                font-size: 1.2rem;
+                transition: 0.5s;
+            }
+            a:hover{
+                color: #716c6ce2;
+            }
+        }
+
+        .home::after{
+            content: '';
+            position: absolute;
+            border-radius: 10px;
+            width: 30px;
+            height: 4px;
+            background-color: $secondary-dark;
+            
+            bottom: 9px;
+            right: 25px;
+        }
+    }
+
+    .btnMobil{
+        width: 30px;
+        height: 30px;
+
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 9999;
+
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        div{
+            width: 100%;
+            height: 5px;
+            border-radius: 10px;
+            background-color: $secondary-dark;
+        }
+    }
+
+}
+@media (max-width: 768px){
+    nav{
+
+        ul{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 35px;
+
+            position: fixed;
+            width: 0vw;
+            height: 100vh;
+            right: 0;
+            bottom: 0px;
+            background-color: $secondary-dark;
+            transition: 0.8s;
+            z-index: 999;
+
+            li{
+                text-align: center;
+                a{
+                    color: $primary-light;
+                }
+            }
+        }
+
+        .btnMobil{
+            display: flex;
+            cursor: pointer;
+        }
+    }
+
+    .oper{
+        width: 100vw;
+    }
+}
+
+

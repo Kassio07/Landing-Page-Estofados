@@ -5,14 +5,45 @@
 }
 
 
-@import url('assets/_fonts.scss');
-@import url('assets/_header.scss');
-@import url('assets/_main.scss');
-@import url('assets/_footer.scss');
-@import url('assets/_colors.scss');
+@import"./assets/fonts";
+@import"./assets/colors";
+@import"./assets/footer";
+@import"./assets/main";
+@import"./assets/header";
 
 
 body{
-    
-    
+ font-family: sans-light;
+ background-color: $primary-light;
+ font-size: 16px;
+ position: relative;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    height: auto;
+}
+
+
+a{
+    font-family: sans-semiBold;
+    color: $secondary-dark;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+}
+
+button{
+    cursor: pointer;
+    border: none;
 }
