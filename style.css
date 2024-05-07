@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: sans-light;
   font-weight: 300;
@@ -33,7 +34,6 @@
   font-style: normal;
   src: url("../files/fonts/OpenSans-Bold.ttf");
 }
-
 nav {
   display: flex;
   flex-direction: row;
