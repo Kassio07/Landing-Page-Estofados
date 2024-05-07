@@ -103,13 +103,16 @@ nav .btnMobil div {
 header {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: flex-start;
+  justify-content: center;
   height: 100vh;
   padding: 30px 0;
   margin-top: 150px;
 }
 header .headerText {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 header .headerText .textCaixa1 P {
   margin-bottom: 2rem;
@@ -137,6 +140,9 @@ header .headerText .textCaixa2 div i {
 }
 header .headerImg {
   flex: 1;
+}
+header .headerImg img {
+  width: 100%;
 }
 
 .btnCtt {
