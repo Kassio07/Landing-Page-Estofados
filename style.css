@@ -4,36 +4,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: sans-light;
-  font-weight: 300;
-  font-style: normal;
-  src: url("../files/fonts/OpenSans-Light.ttf");
-}
-@font-face {
-  font-family: sans-regular;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../files/fonts/OpenSans-Regular.ttf");
-}
-@font-face {
-  font-family: sans-medium;
-  font-weight: 500;
-  font-style: normal;
-  src: url("../files/fonts/OpenSans-Medium.ttf");
-}
-@font-face {
-  font-family: sans-semiBold;
-  font-weight: 600;
-  font-style: normal;
-  src: url("../files/fonts/OpenSans-SemiBold.ttf");
-}
-@font-face {
-  font-family: sans-bold;
-  font-weight: 700;
-  font-style: normal;
-  src: url("../files/fonts/OpenSans-Bold.ttf");
-}
 nav {
   display: flex;
   flex-direction: row;
@@ -228,6 +198,36 @@ header .headerImg img {
   header .headerText .textCaixa2 div {
     font-size: 1.1rem;
   }
+}
+@font-face {
+  font-family: sans-light;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../files/fonts/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: sans-regular;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../files/fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: sans-medium;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../files/fonts/OpenSans-Medium.ttf");
+}
+@font-face {
+  font-family: sans-semiBold;
+  font-weight: 600;
+  font-style: normal;
+  src: url("../files/fonts/OpenSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: sans-bold;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../files/fonts/OpenSans-Bold.ttf");
 }
 body {
   font-family: sans-light;
