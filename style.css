@@ -5,10 +5,10 @@
 }
 
 @font-face {
-  font-family: sans-light;
+  font-family: poppins-light;
   font-weight: 300;
   font-style: normal;
-  src: url("../files/fonts/OpenSans-Light.ttf");
+  src: url("../files/fonts/Poppins-Light.ttf");
 }
 @font-face {
   font-family: sans-regular;
@@ -266,7 +266,7 @@ button {
 
 h1 {
   color: #163179;
-  font-family: sans-bold;
+  font-family: poppins-light;
   font-size: 2.2rem;
   margin-bottom: 0.8rem;
 }
