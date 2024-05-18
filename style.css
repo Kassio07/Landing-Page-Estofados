@@ -4,36 +4,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "poppins-light";
-  font-weight: 300;
-  font-style: normal;
-  src: url("../files/fonts/Poppins-Light.ttf");
-}
-@font-face {
-  font-family: sans-regular;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../files/fonts/OpenSans-Regular.ttf");
-}
-@font-face {
-  font-family: sans-medium;
-  font-weight: 500;
-  font-style: normal;
-  src: url("../files/fonts/OpenSans-Medium.ttf");
-}
-@font-face {
-  font-family: sans-semiBold;
-  font-weight: 600;
-  font-style: normal;
-  src: url("../files/fonts/OpenSans-SemiBold.ttf");
-}
-@font-face {
-  font-family: sans-bold;
-  font-weight: 700;
-  font-style: normal;
-  src: url("../files/fonts/OpenSans-Bold.ttf");
-}
 nav {
   display: flex;
   flex-direction: row;
@@ -128,7 +98,6 @@ header .headerText .textCaixa1 button {
 header .headerText .textCaixa2 {
   display: flex;
   flex-direction: row;
-  font-family: sans-regular;
   color: rgba(0, 0, 0, 0.5647058824);
   font-size: 0.9rem;
   gap: 25px;
@@ -148,8 +117,9 @@ header .headerImg img {
 .btnCtt {
   background-color: #0D6EFD;
   color: #fff;
-  font-family: sans-bold;
   border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 768px) {
@@ -230,7 +200,8 @@ header .headerImg img {
   }
 }
 body {
-  font-family: sans-light;
+  font-family: Poppins;
+  font-weight: normal;
   background-color: #fff;
   font-size: 16px;
   position: relative;
@@ -243,8 +214,23 @@ body {
   height: auto;
 }
 
+h1 {
+  color: #163179;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6352941176);
+}
+
 a {
-  font-family: sans-semiBold;
+  font-family: Poppins;
+  font-weight: 500;
   color: #163179;
   text-decoration: none;
   cursor: pointer;
@@ -262,17 +248,4 @@ img {
 button {
   cursor: pointer;
   border: none;
-}
-
-h1 {
-  color: #163179;
-  font-family: "poppins-light";
-  font-size: 2.2rem;
-  margin-bottom: 0.8rem;
-}
-
-p {
-  font-size: 1.1rem;
-  font-family: sans-semiBold;
-  color: rgba(0, 0, 0, 0.6352941176);
 }/*# sourceMappingURL=style.css.map */

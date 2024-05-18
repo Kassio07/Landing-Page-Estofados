@@ -5,15 +5,15 @@
 }
 
 
-@import "assets/fonts";
 @import "assets/colors";
+@import "assets/footer";
 @import "assets/header";
 @import "assets/main";
-@import "assets/footer";
 
 
 body{
- font-family: sans-light;
+ font-family: Poppins;
+ font-weight: normal;
  background-color: $primary-light;
  font-size: 16px;
  position: relative;
@@ -26,9 +26,24 @@ body{
     height: auto;
 }
 
+h1{
+    color: $secondary-dark;
+    font-family: Poppins; 
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem ;       
+}
+
+p{
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #000000a2;
+}
+
 
 a{
-    font-family: sans-semiBold;
+    font-family: Poppins;
+    font-weight: 500;
     color: $secondary-dark;
     text-decoration: none;
     cursor: pointer;
@@ -48,15 +63,3 @@ button{
     border: none;
 }
 
-h1{
-    color: $secondary-dark;
-    font-family: 'poppins-light'; 
-    font-size: 2.2rem;
-    margin-bottom: 0.8rem ;       
-}
-
-p{
-    font-size: 1.1rem;
-    font-family: sans-semiBold;
-    color: #000000a2;
-}

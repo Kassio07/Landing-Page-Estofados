@@ -103,12 +103,12 @@ header{
                 text-transform: uppercase;
                 box-shadow: rgba(0, 0, 0, 0.366) 0px 22px 70px 4px;
             }
+
         }
         
         .textCaixa2{
             display: flex;
             flex-direction: row;
-            font-family: sans-regular;
             color: #00000090;
             font-size: 0.9rem;
             gap: 25px;
@@ -137,8 +137,9 @@ header{
     // background-color: $terciary-ligth;
     background-color: #0D6EFD;
     color: $primary-light;
-    font-family: sans-bold;
     border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 @media (max-width: 768px){
