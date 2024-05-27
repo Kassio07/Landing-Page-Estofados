@@ -28,11 +28,13 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 nav ul li {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 nav ul li a {
   padding: 10px 20px;
@@ -49,8 +51,8 @@ nav ul .home::after {
   width: 30px;
   height: 3px;
   background-color: #163179;
-  bottom: 0px;
-  left: 45px;
+  bottom: 10px;
+  left: 47px;
 }
 nav .btnMobil {
   width: 30px;
@@ -73,11 +75,9 @@ nav .btnMobil div {
 header {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   height: 100vh;
-  padding: 30px 0;
-  margin-top: 150px;
 }
 header .headerText {
   flex: 1;
@@ -89,8 +89,8 @@ header .headerText .textCaixa1 P {
   font-size: 1.3rem;
 }
 header .headerText .textCaixa1 button {
-  padding: 12px 50px;
-  margin-bottom: 2rem;
+  padding: 17px 50px;
+  margin-bottom: 4rem;
   font-size: 1rem;
   text-transform: uppercase;
   box-shadow: rgba(0, 0, 0, 0.366) 0px 22px 70px 4px;
@@ -105,7 +105,7 @@ header .headerText .textCaixa2 {
 header .headerText .textCaixa2 div i {
   margin-right: 7px;
   color: #163179;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 header .headerImg {
   flex: 1;
