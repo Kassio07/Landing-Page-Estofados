@@ -9,19 +9,20 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
   background-color: #fff;
   max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 10px;
   position: fixed;
   width: 100vw;
   top: 0;
   z-index: 88;
 }
 nav .logoImg {
-  padding: 15px 0;
+  padding: 10px 0;
 }
 nav .logoImg img {
-  width: 100px;
+  width: 120px;
 }
 nav ul {
   display: flex;
@@ -74,11 +75,9 @@ nav .btnMobil div {
 header {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  margin-top: 200px;
   height: 100vh;
-  position: relative;
 }
 header .headerText {
   flex: 1;
@@ -91,59 +90,28 @@ header .headerText .textCaixa1 P {
 }
 header .headerText .textCaixa1 button {
   padding: 17px 50px;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   font-size: 1rem;
   text-transform: uppercase;
   box-shadow: rgba(0, 0, 0, 0.366) 0px 22px 70px 4px;
 }
 header .headerText .textCaixa2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   color: rgba(0, 0, 0, 0.5647058824);
   font-size: 0.9rem;
   gap: 25px;
+}
+header .headerText .textCaixa2 div i {
+  margin-right: 7px;
+  color: #163179;
+  font-size: 1.8rem;
 }
 header .headerImg {
   flex: 1;
 }
 header .headerImg img {
   width: 100%;
-}
-
-div {
-  font-size: 1rem;
-}
-div i {
-  margin-right: 7px;
-  color: #163179;
-  font-size: 2rem;
-}
-
-.card-headers {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  gap: 30px;
-  position: absolute;
-  bottom: 15%;
-}
-.card-headers .card-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  height: 200px;
-  border-radius: 10px;
-  flex: 1;
-}
-.card-headers .card-item i {
-  font-size: 3rem;
-}
-.card-headers .card-item .card-text {
-  margin-top: 20px;
-  font-size: 1.2rem;
 }
 
 .btnCtt {
@@ -174,13 +142,6 @@ div i {
   }
   nav ul li a {
     color: #fff;
-    width: 80%;
-    cursor: pointer;
-    border-radius: 10px;
-  }
-  nav ul li a:hover {
-    background-color: #fff;
-    color: #000;
   }
   nav ul .home::after {
     display: none;
@@ -195,7 +156,6 @@ div i {
   header {
     flex-direction: column;
     justify-content: center;
-    margin-top: 130px;
   }
   header .headerText .textCaixa1 h1 {
     font-size: 1.8rem;
@@ -258,7 +218,8 @@ h1 {
   color: #163179;
   font-family: Poppins;
   font-weight: 700;
-  font-size: 2.7rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
 }
 
 p {
@@ -277,6 +238,7 @@ a {
 
 li {
   list-style: none;
+  cursor: pointer;
 }
 
 img {

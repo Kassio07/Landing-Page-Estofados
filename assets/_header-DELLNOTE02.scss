@@ -3,17 +3,20 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
   background-color: $primary-light;
+
   max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 10px;
+
   position: fixed;
   width: 100vw;
   top: 0;
   z-index: 88;
   .logoImg {
-    padding: 15px 0;
+    padding: 10px 0;
     img {
-      width: 100px;
+      width: 120px;
     }
   }
 
@@ -77,11 +80,9 @@ nav {
 header {
   display: flex;
   flex-direction: row;
-  align-items:flex-start;
+  align-items:center;
   justify-content: center;
-  margin-top: 200px;
   height: 100vh;
-  position: relative;
   // padding: 80px 0;
   // margin-top: 150px;
   .headerText {
@@ -98,7 +99,7 @@ header {
 
       button {
         padding: 17px 50px;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         font-size: 1rem;
         text-transform: uppercase;
         box-shadow: rgba(0, 0, 0, 0.366) 0px 22px 70px 4px;
@@ -107,12 +108,18 @@ header {
 
     .textCaixa2 {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       color: #00000090;
       font-size: 0.9rem;
       gap: 25px;
 
-  
+      div {
+        i {
+          margin-right: 7px;
+          color: $secondary-dark;
+          font-size: 1.8rem;
+        }
+      }
     }
   }
   .headerImg {
@@ -120,46 +127,6 @@ header {
 
     img {
       width: 100%;
-    }
-  }
-}
-
-div {
-  font-size: 1rem;
-  i {
-    margin-right: 7px;
-    color: $secondary-dark;
-    font-size: 2rem;
-  }
-}
-
-.card-headers{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  gap: 30px;
-
-  position: absolute;
-  bottom: 15%;
-  .card-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    height: 200px;
-    border-radius: 10px;
-    flex: 1;
-
-    i{
-      font-size: 3rem;
-    }
-
-    .card-text{
-      margin-top: 20px;
-      font-size: 1.2rem;
     }
   }
 }
@@ -193,13 +160,6 @@ div {
         text-align: center;
         a {
           color: $primary-light;
-          width: 80%;
-          cursor: pointer;
-          border-radius: 10px;
-        }
-        a:hover{
-          background-color: #fff;
-          color: #000;
         }
       }
 
@@ -221,7 +181,6 @@ div {
   header {
     flex-direction: column;
     justify-content: center;
-    margin-top: 130px;
     // align-items: center;
     .headerText {
       .textCaixa1 {
