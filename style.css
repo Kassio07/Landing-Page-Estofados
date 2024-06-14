@@ -5,26 +5,82 @@
 }
 
 header {
+  height: 100vh;
+}
+header .headerTopo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-header .logoHeader {
-  width: 120px;
+header .headerTopo .menuHamburguer {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #01ADEF;
+  z-index: 98;
 }
-header nav ul {
+header .headerTopo .menuHamburguer .fa-bars {
+  display: none;
+  z-index: 99;
+}
+header .headerTopo .menuHamburguer .fa-xmark {
+  display: none;
+  z-index: 99;
+}
+header .headerTopo nav ul {
   display: flex;
-  gap: 35px;
+  gap: 45px;
 }
-header nav ul li a {
+header .headerTopo nav ul li a {
   font-size: 1.2rem;
   transition: all 0.5s;
 }
-header nav ul li a:hover {
-  color: rgba(22, 48, 121, 0.6156862745);
+header .headerTopo nav ul li a:hover {
+  color: rgba(76, 88, 121, 0.7098039216);
+}
+header .headerTopo img {
+  width: 110px;
 }
 
+.opner {
+  width: 300px !important;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header .headerTopo .menuHamburguer .fa-bars {
+    display: flex;
+  }
+  header .headerTopo nav {
+    background-color: #163179;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+    width: 0px;
+    height: 100vh;
+    transition: all 0.7s;
+  }
+  header .headerTopo nav ul {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  header .headerTopo nav ul li a {
+    color: #fff;
+  }
+  header .headerTopo nav ul li a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
 body {
   font-family: Poppins;
   font-weight: normal;
