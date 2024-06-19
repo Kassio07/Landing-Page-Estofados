@@ -208,11 +208,12 @@ header .headcols .col-2 {
     text-align: center;
   }
   header .headcols .col-1 .caixaAjust1 .textH1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
   }
   header .headcols .col-1 .caixaAjust1 button {
     font-size: 0.8rem;
+    margin: 35px 0;
   }
   header .headcols .col-1 .caixaAjust1 .iconsCaixa1 {
     text-align: start;
