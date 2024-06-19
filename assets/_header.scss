@@ -251,19 +251,21 @@ header{
                 flex: 1;
                 margin-bottom: 50px;
                 .caixaAjust1{
-
+                    text-align: center;
                     .textH1{
-                        font-size: 1.8rem;
+                        font-size: 1.5rem;
+                        text-align: center;
                     }
                     
                    button{
                     font-size: 0.8rem;
-                    position: relative;
-                    left: 50%;
-                    transform: translateX(-50%);
+                    // position: relative;
+                    // left: 50%;
+                    // transform: translateX(-50%);
                    }
     
-                   .iconsCaixa1{    
+                   .iconsCaixa1{ 
+                    text-align: start;   
                     p{
                         font-size: 0.8rem;
                         i{

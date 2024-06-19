@@ -204,14 +204,18 @@ header .headcols .col-2 {
     flex: 1;
     margin-bottom: 50px;
   }
+  header .headcols .col-1 .caixaAjust1 {
+    text-align: center;
+  }
   header .headcols .col-1 .caixaAjust1 .textH1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
   header .headcols .col-1 .caixaAjust1 button {
     font-size: 0.8rem;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+  }
+  header .headcols .col-1 .caixaAjust1 .iconsCaixa1 {
+    text-align: start;
   }
   header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p {
     font-size: 0.8rem;
