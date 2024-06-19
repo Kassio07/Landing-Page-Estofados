@@ -27,7 +27,7 @@ header{
 
         nav{
 
-
+            z-index: 95;
             ul{
                 display: flex;
                 gap: 45px;
@@ -257,19 +257,13 @@ header{
                     }
                     
                    button{
-                    margin: 20px 0;
-                    background-color: $terciary-ligth;
-                    padding: 15px 50px;
-                    border-radius: 5px;
-                    color: #fff;
                     font-size: 0.8rem;
-                    text-transform: uppercase;
-                    font-weight: bold;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
                    }
     
-                   .iconsCaixa1{
-                    gap: 25px;
-    
+                   .iconsCaixa1{    
                     p{
                         font-size: 0.8rem;
                         i{
@@ -278,10 +272,6 @@ header{
                     }
                    }
                 }
-            }
-    
-            .col-2{
-                flex: 1;
             }
         }
     }
