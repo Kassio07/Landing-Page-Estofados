@@ -12,14 +12,15 @@ function openClose(){
 }
 
 menuOpner.addEventListener('click', ()=>{
-    menuOpner.classList.toggle('hidden')
-    openClose()
+    menuOpner.style.display = 'none'
+    menuClose.style.display = 'block'
+    openClose();
 })
-
 menuClose.addEventListener('click', ()=>{
-    openClose()
+    menuClose.style.display = 'none'
+    menuOpner.style.display = 'block'
+    openClose();
 })
-
 
 
 
