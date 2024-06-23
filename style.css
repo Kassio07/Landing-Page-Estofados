@@ -5,7 +5,7 @@
 }
 
 header {
-  height: 100vh;
+  height: auto;
 }
 header .headerTopo {
   display: flex;
@@ -56,16 +56,6 @@ header .headcols {
 header .headcols .col-1 {
   flex: 1;
 }
-header .headcols .col-1 .caixaAjust1 button {
-  margin: 20px 0;
-  background-color: #1EC64E;
-  padding: 15px 60px;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  font-weight: bold;
-}
 header .headcols .col-1 .caixaAjust1 .iconsCaixa1 {
   display: flex;
   flex-direction: column;
@@ -78,6 +68,20 @@ header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p i {
 }
 header .headcols .col-2 {
   flex: 1;
+}
+header .headerContainerCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 180px 0;
+}
+header .headerContainerCards .cardItem {
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .opner {
@@ -160,6 +164,10 @@ header .headcols .col-2 {
   header .headcols .col-2 {
     flex: 1;
   }
+  header .headerContainerCards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media (max-width: 576px) {
   header .headerTopo .menuHamburguer .fa-bars {
@@ -223,6 +231,113 @@ header .headcols .col-2 {
   }
   header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p i {
     font-size: 1.3rem;
+  }
+}
+main {
+  margin-top: 100px;
+}
+main h2 {
+  padding: 20px 0;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #163179;
+  position: relative;
+}
+main h2::after {
+  content: "";
+  position: absolute;
+  bottom: 23px;
+  left: 5px;
+  width: 90px;
+  height: 2px;
+  background-color: #00ADEF;
+}
+main .about {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+main .about .aboutCol1 {
+  flex: 1;
+}
+main .about .aboutCol1 img {
+  width: 90%;
+}
+main .about .aboutCol2 {
+  flex: 1;
+}
+main .about .aboutCol2 div {
+  margin: 30px 0;
+}
+main .about .aboutCol2 div h3 {
+  color: #163179;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+main .about .aboutCol2 div .escolha {
+  font-size: 1.8rem;
+}
+main .about .aboutCol2 div ul {
+  margin-top: 8px;
+}
+main .about .aboutCol2 div ul li {
+  color: rgba(0, 0, 0, 0.6352941176);
+}
+main .about .aboutCol2 div ul li i {
+  color: #00ADEF;
+  padding-right: 5px;
+  font-size: 20px;
+}
+main .about .aboutCol2 div .textDestque {
+  color: #01ADEF;
+}
+
+.btnSite button {
+  background-color: #1EC64E;
+  padding: 15px 60px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  main .btnSite button {
+    font-size: 0.8rem;
+    margin: 35px 0;
+  }
+  main .about .aboutCol2 div .escolha {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1200px) {
+  main .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .about .aboutCol1 {
+    flex: 1.5;
+    order: 1;
+  }
+  main .about .aboutCol1 img {
+    width: 100%;
+  }
+  main .about .aboutCol2 {
+    flex: 2;
+    margin-bottom: 120px;
+  }
+  main .about .aboutCol2 .btnSite {
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  main .about .aboutCol1 {
+    flex: 1.5;
+  }
+  main .about .aboutCol2 {
+    flex: 2;
   }
 }
 body {

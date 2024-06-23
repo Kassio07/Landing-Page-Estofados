@@ -1,5 +1,5 @@
 header{
-    height: 100vh;
+    height: auto;
 
     .headerTopo{
         display: flex;
@@ -60,17 +60,6 @@ header{
             flex: 1;
 
             .caixaAjust1{
-                
-               button{
-                margin: 20px 0;
-                background-color: $terciary-ligth;
-                padding: 15px 60px;
-                border-radius: 5px;
-                color: #fff;
-                font-size: 1.3rem;
-                text-transform: uppercase;
-                font-weight: bold;
-               }
 
                .iconsCaixa1{
                 display: flex;
@@ -91,6 +80,22 @@ header{
 
         .col-2{
             flex: 1;
+        }
+    }
+
+    .headerContainerCards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        margin: 180px 0;
+
+        .cardItem{
+            width: 300px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
         }
     }
 }
@@ -191,6 +196,10 @@ header{
             .col-2{
                 flex: 1;
             }
+        }
+        .headerContainerCards{
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
 }
