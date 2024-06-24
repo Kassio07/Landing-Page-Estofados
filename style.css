@@ -5,7 +5,7 @@
 }
 
 header {
-  height: auto;
+  height: 100vh;
 }
 header .headerTopo {
   display: flex;
@@ -74,7 +74,7 @@ header .headerContainerCards {
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
-  margin: 180px 0;
+  margin: 50px 0;
 }
 header .headerContainerCards .cardItem {
   width: 300px;
@@ -97,6 +97,9 @@ header .headerContainerCards .cardItem {
 }
 
 @media (max-width: 768px) {
+  header {
+    height: auto;
+  }
   header .headerTopo .menuHamburguer .fa-bars {
     display: flex;
   }
@@ -170,6 +173,9 @@ header .headerContainerCards .cardItem {
   }
 }
 @media (max-width: 576px) {
+  header {
+    height: auto;
+  }
   header .headerTopo .menuHamburguer .fa-bars {
     display: flex;
   }
@@ -234,7 +240,7 @@ header .headerContainerCards .cardItem {
   }
 }
 main {
-  margin-top: 100px;
+  padding: 350px 0 0 0;
 }
 main h2 {
   padding: 20px 0;
@@ -255,7 +261,7 @@ main h2::after {
 main .about {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 main .about .aboutCol1 {
   flex: 1;
@@ -304,6 +310,9 @@ main .about .aboutCol2 div .textDestque {
 }
 
 @media (max-width: 576px) {
+  main {
+    padding: 50px 0 0 0;
+  }
   main .btnSite button {
     font-size: 0.8rem;
     margin: 35px 0;
@@ -313,6 +322,19 @@ main .about .aboutCol2 div .textDestque {
   }
   main .about .aboutCol2 div .escolha {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    padding: 0px 0 0 0;
+  }
+}
+@media (max-width: 992px) {
+  main .about .aboutCol1 {
+    flex: 1.5;
+  }
+  main .about .aboutCol2 {
+    flex: 2;
   }
 }
 @media (max-width: 1200px) {
@@ -330,18 +352,10 @@ main .about .aboutCol2 div .textDestque {
   }
   main .about .aboutCol2 {
     flex: 2;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
   main .about .aboutCol2 .btnSite {
     text-align: center;
-  }
-}
-@media (max-width: 992px) {
-  main .about .aboutCol1 {
-    flex: 1.5;
-  }
-  main .about .aboutCol2 {
-    flex: 2;
   }
 }
 body {

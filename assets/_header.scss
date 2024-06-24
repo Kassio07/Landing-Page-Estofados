@@ -1,5 +1,5 @@
 header{
-    height: auto;
+    height: 100vh;
 
     .headerTopo{
         display: flex;
@@ -88,7 +88,7 @@ header{
         flex-direction: row;
         justify-content: space-between;
         gap: 30px;
-        margin: 180px 0;
+        margin: 50px 0;
 
         .cardItem{
             width: 300px;
@@ -112,7 +112,7 @@ header{
 
 @media (max-width: 768px){
     header{
-
+        height: auto;
         .headerTopo{
             .menuHamburguer{
 
@@ -207,7 +207,7 @@ header{
 
 @media (max-width: 576px){
     header{
-
+        height: auto;
         .headerTopo{
             .menuHamburguer{
 
