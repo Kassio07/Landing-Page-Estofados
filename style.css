@@ -7,13 +7,20 @@
 header {
   height: 100vh;
 }
-header .headerTopo {
+header .fixedTop {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100vw;
+}
+header .fixedTop .headerTopo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 105px;
 }
-header .headerTopo .menuHamburguer {
+header .fixedTop .headerTopo .menuHamburguer {
   position: fixed;
   right: 20px;
   top: 20px;
@@ -22,36 +29,36 @@ header .headerTopo .menuHamburguer {
   color: #01ADEF;
   z-index: 98;
 }
-header .headerTopo .menuHamburguer .fa-bars {
+header .fixedTop .headerTopo .menuHamburguer .fa-bars {
   display: none;
   z-index: 99;
 }
-header .headerTopo .menuHamburguer .fa-xmark {
+header .fixedTop .headerTopo .menuHamburguer .fa-xmark {
   display: none;
   z-index: 99;
 }
-header .headerTopo nav {
+header .fixedTop .headerTopo nav {
   z-index: 95;
 }
-header .headerTopo nav ul {
+header .fixedTop .headerTopo nav ul {
   display: flex;
   gap: 45px;
 }
-header .headerTopo nav ul li a {
+header .fixedTop .headerTopo nav ul li a {
   font-size: 1.2rem;
   transition: all 0.5s;
 }
-header .headerTopo nav ul li a:hover {
+header .fixedTop .headerTopo nav ul li a:hover {
   color: rgba(76, 88, 121, 0.7098039216);
 }
-header .headerTopo img {
+header .fixedTop .headerTopo img {
   width: 110px;
 }
 header .headcols {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 150px 0px 20px 0;
 }
 header .headcols .col-1 {
   flex: 1;
