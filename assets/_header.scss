@@ -2,9 +2,10 @@ header{
     height: 100vh;
 
     .fixedTop{
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
         position: fixed;
         width: 100vw;
+        z-index: 999;
     .headerTopo{
         display: flex;
         flex-direction: row;
