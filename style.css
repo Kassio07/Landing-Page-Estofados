@@ -308,6 +308,9 @@ main .about .aboutCol2 div .textDestque {
     font-size: 0.8rem;
     margin: 35px 0;
   }
+  main .about {
+    margin-top: 0px;
+  }
   main .about .aboutCol2 div .escolha {
     font-size: 1.4rem;
   }
@@ -327,7 +330,7 @@ main .about .aboutCol2 div .textDestque {
   }
   main .about .aboutCol2 {
     flex: 2;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
   }
   main .about .aboutCol2 .btnSite {
     text-align: center;
