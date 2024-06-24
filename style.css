@@ -252,7 +252,7 @@ main h2 {
 main h2::after {
   content: "";
   position: absolute;
-  bottom: 23px;
+  bottom: 20px;
   left: 5px;
   width: 90px;
   height: 2px;
@@ -261,6 +261,7 @@ main h2::after {
 main .about {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-top: 30px;
 }
 main .about .aboutCol1 {
@@ -296,6 +297,48 @@ main .about .aboutCol2 div ul li i {
 }
 main .about .aboutCol2 div .textDestque {
   color: #01ADEF;
+}
+main .services {
+  margin-bottom: 200px;
+}
+main .services p {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #163179;
+  font-weight: 600;
+}
+main .services .serviceContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+main .services .serviceContainer .card-service-item {
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+main .services .serviceContainer .card-service-item .title-service-item {
+  color: #163179;
+  font-size: 1.2rem;
+  padding: 0 0 10px 0;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+}
+main .services .serviceContainer .card-service-item .text-service-item {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6352941176);
+  height: 150px;
+}
+main .services .serviceContainer .card-service-item .btn-service-item button {
+  font-size: 0.8rem;
 }
 
 .btnSite button {

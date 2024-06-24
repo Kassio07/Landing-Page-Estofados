@@ -12,7 +12,7 @@ main{
     h2::after{
         content: "";
         position: absolute;
-        bottom: 23px;
+        bottom: 20px;
         left:5px;
         width: 90px;
         height: 2px;
@@ -22,6 +22,7 @@ main{
     .about{
         display: flex;
         flex-direction: row;
+        align-items: center;
         margin-top: 30px;   
         .aboutCol1{
             flex: 1;
@@ -62,6 +63,57 @@ main{
                 }
             }
         }
+    }
+
+
+    // service
+
+    .services{
+      
+        margin-bottom: 200px;
+
+        p{
+            text-align: center;
+            padding: 50px 0;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: $secondary-dark;
+            font-weight: 600;
+        }
+
+        .serviceContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            .card-service-item{
+                width: 300px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                text-align: center;
+                padding: 10px;
+                border-radius: 10px;
+                .title-service-item{
+                    color: $secondary-dark;
+                    font-size: 1.2rem;
+                    padding: 0 0 10px 0;
+                    font-weight: bold;
+                    height: 40px;
+                    line-height: 40px;
+                }
+                .text-service-item{
+                    font-size: 0.9rem;
+                    color: #000000a2;
+                    height: 150px;
+                }
+
+                .btn-service-item button{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
     }
 }
 
