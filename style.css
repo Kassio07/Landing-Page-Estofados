@@ -5,15 +5,22 @@
 }
 
 header {
-  height: auto;
+  height: 100vh;
 }
-header .headerTopo {
+header .fixedTop {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  position: fixed;
+  width: 100vw;
+}
+header .fixedTop .headerTopo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 105px;
 }
-header .headerTopo .menuHamburguer {
+header .fixedTop .headerTopo .menuHamburguer {
   position: fixed;
   right: 20px;
   top: 20px;
@@ -22,36 +29,36 @@ header .headerTopo .menuHamburguer {
   color: #01ADEF;
   z-index: 98;
 }
-header .headerTopo .menuHamburguer .fa-bars {
+header .fixedTop .headerTopo .menuHamburguer .fa-bars {
   display: none;
-  z-index: 99;
+  z-index: 98;
 }
-header .headerTopo .menuHamburguer .fa-xmark {
+header .fixedTop .headerTopo .menuHamburguer .fa-xmark {
   display: none;
-  z-index: 99;
+  z-index: 98;
 }
-header .headerTopo nav {
+header .fixedTop .headerTopo nav {
   z-index: 95;
 }
-header .headerTopo nav ul {
+header .fixedTop .headerTopo nav ul {
   display: flex;
   gap: 45px;
 }
-header .headerTopo nav ul li a {
+header .fixedTop .headerTopo nav ul li a {
   font-size: 1.2rem;
   transition: all 0.5s;
 }
-header .headerTopo nav ul li a:hover {
+header .fixedTop .headerTopo nav ul li a:hover {
   color: rgba(76, 88, 121, 0.7098039216);
 }
-header .headerTopo img {
+header .fixedTop .headerTopo img {
   width: 110px;
 }
 header .headcols {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 150px 0px 20px 0;
 }
 header .headcols .col-1 {
   flex: 1;
@@ -74,7 +81,7 @@ header .headerContainerCards {
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
-  margin: 180px 0;
+  margin: 50px 0;
 }
 header .headerContainerCards .cardItem {
   width: 300px;
@@ -97,6 +104,9 @@ header .headerContainerCards .cardItem {
 }
 
 @media (max-width: 768px) {
+  header {
+    height: auto;
+  }
   header .headerTopo .menuHamburguer .fa-bars {
     display: flex;
   }
@@ -133,7 +143,7 @@ header .headerContainerCards .cardItem {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 150px 0px 20px 0;
   }
   header .headcols .col-1 {
     flex: 1;
@@ -170,6 +180,9 @@ header .headerContainerCards .cardItem {
   }
 }
 @media (max-width: 576px) {
+  header {
+    height: auto;
+  }
   header .headerTopo .menuHamburguer .fa-bars {
     display: flex;
   }
@@ -206,7 +219,7 @@ header .headerContainerCards .cardItem {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 150px 0px 20px 0;
   }
   header .headcols .col-1 {
     flex: 1;
@@ -234,7 +247,7 @@ header .headerContainerCards .cardItem {
   }
 }
 main {
-  margin-top: 100px;
+  padding: 350px 0 0 0;
 }
 main h2 {
   padding: 20px 0;
@@ -246,7 +259,7 @@ main h2 {
 main h2::after {
   content: "";
   position: absolute;
-  bottom: 23px;
+  bottom: 20px;
   left: 5px;
   width: 90px;
   height: 2px;
@@ -255,7 +268,8 @@ main h2::after {
 main .about {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
+  align-items: center;
+  margin-top: 30px;
 }
 main .about .aboutCol1 {
   flex: 1;
@@ -291,6 +305,53 @@ main .about .aboutCol2 div ul li i {
 main .about .aboutCol2 div .textDestque {
   color: #01ADEF;
 }
+main .services {
+  margin-bottom: 200px;
+}
+main .services p {
+  text-align: center;
+  padding: 50px 0;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #163179;
+  font-weight: 600;
+}
+main .services p i {
+  font-size: 2rem;
+  color: #00ADEF;
+}
+main .services .serviceContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+main .services .serviceContainer .card-service-item {
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+main .services .serviceContainer .card-service-item .title-service-item {
+  color: #163179;
+  font-size: 1.2rem;
+  padding: 0 0 10px 0;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+}
+main .services .serviceContainer .card-service-item .text-service-item {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6352941176);
+  height: 150px;
+}
+main .services .serviceContainer .card-service-item .btn-service-item button {
+  font-size: 0.8rem;
+}
 
 .btnSite button {
   background-color: #1EC64E;
@@ -304,12 +365,31 @@ main .about .aboutCol2 div .textDestque {
 }
 
 @media (max-width: 576px) {
+  main {
+    padding: 50px 0 0 0;
+  }
   main .btnSite button {
     font-size: 0.8rem;
     margin: 35px 0;
   }
+  main .about {
+    margin-top: 0px;
+  }
   main .about .aboutCol2 div .escolha {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    padding: 0px 0 0 0;
+  }
+}
+@media (max-width: 992px) {
+  main .about .aboutCol1 {
+    flex: 1.5;
+  }
+  main .about .aboutCol2 {
+    flex: 2;
   }
 }
 @media (max-width: 1200px) {
@@ -320,25 +400,15 @@ main .about .aboutCol2 div .textDestque {
   }
   main .about .aboutCol1 {
     flex: 1.5;
-    order: 1;
   }
   main .about .aboutCol1 img {
     width: 100%;
   }
   main .about .aboutCol2 {
-    flex: 2;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
   }
   main .about .aboutCol2 .btnSite {
     text-align: center;
-  }
-}
-@media (max-width: 992px) {
-  main .about .aboutCol1 {
-    flex: 1.5;
-  }
-  main .about .aboutCol2 {
-    flex: 2;
   }
 }
 body {

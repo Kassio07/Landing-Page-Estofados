@@ -1,12 +1,16 @@
 header{
-    height: auto;
+    height: 100vh;
 
+    .fixedTop{
+        backdrop-filter: blur(20px);
+        position: fixed;
+        width: 100vw;
     .headerTopo{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
+        height: 105px;
         .menuHamburguer{
             position: fixed;
             right: 20px;
@@ -17,11 +21,11 @@ header{
             z-index: 98;
             .fa-bars{
                 display: none;
-                z-index: 99;
+                z-index: 98;
             }
             .fa-xmark{
                 display: none;
-                z-index: 99;
+                z-index: 98;
             }
         }
 
@@ -49,12 +53,13 @@ header{
             width: 110px;
         }
     }
+}
 
     .headcols{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 20px 0;
+        padding: 150px 0px 20px 0;
 
         .col-1{
             flex: 1;
@@ -88,7 +93,7 @@ header{
         flex-direction: row;
         justify-content: space-between;
         gap: 30px;
-        margin: 180px 0;
+        margin: 50px 0;
 
         .cardItem{
             width: 300px;
@@ -112,7 +117,7 @@ header{
 
 @media (max-width: 768px){
     header{
-
+        height: auto;
         .headerTopo{
             .menuHamburguer{
 
@@ -158,7 +163,9 @@ header{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 20px 0;
+            // padding: 20px 0;
+          padding: 150px 0px 20px 0;
+
     
             .col-1{
                 flex: 1;
@@ -207,7 +214,7 @@ header{
 
 @media (max-width: 576px){
     header{
-
+        height: auto;
         .headerTopo{
             .menuHamburguer{
 
@@ -253,7 +260,8 @@ header{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 20px 0;
+            padding: 150px 0px 20px 0;
+
     
             .col-1{
                 flex: 1;
