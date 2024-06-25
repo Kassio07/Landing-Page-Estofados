@@ -1,298 +1,295 @@
-header{
-    height: 100vh;
-
-    .fixedTop{
-        backdrop-filter: blur(20px);
+header {
+  height: 100vh;
+  .fixedTop {
+    backdrop-filter: blur(20px);
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
+    .headerTopo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 105px;
+      .menuHamburguer {
         position: fixed;
-        width: 100vw;
-    .headerTopo{
+        right: 20px;
+        top: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #01adef;
+        z-index: 98;
+        .fa-bars {
+          display: none;
+          z-index: 98;
+        }
+        .fa-xmark {
+          display: none;
+          z-index: 98;
+        }
+      }
+
+      nav {
+        z-index: 95;
+        ul {
+          display: flex;
+          gap: 45px;
+
+          li {
+            a {
+              font-size: 1.2rem;
+              transition: all 0.5s;
+              font-weight: 600;
+              position: relative;
+                text-decoration: none;
+            }
+            a:hover {
+                color: rgb(10, 16, 32);
+            }
+          }
+        }
+      }
+
+      img {
+        width: 110px;
+      }
+    }
+  }
+
+  .headcols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 0px 20px 0;
+
+    .col-1 {
+      flex: 1;
+
+      .caixaAjust1 {
+        .iconsCaixa1 {
+          display: flex;
+          flex-direction: column;
+          gap: 35px;
+
+          p {
+            i {
+              padding-right: 7px;
+              font-size: 1.5rem;
+              color: $secondary-dark;
+            }
+          }
+        }
+      }
+    }
+
+    .col-2 {
+      flex: 1;
+    }
+  }
+
+  .headerContainerCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 200px 0 30px 0;
+
+    .cardItem {
+      width: 300px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.opner {
+  width: 300px !important;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  
+  header {
+    height: auto;
+    .fixedTop{
+
+    .headerTopo {
+        .menuHamburguer {
+            .fa-bars {
+              display: flex;
+            }
+          }
+      nav {
+        background-color: $secondary-dark;
+        position: fixed;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        height: 105px;
-        .menuHamburguer{
-            position: fixed;
-            right: 20px;
-            top: 20px;
+        right: 0;
+        top: 0;
+        width: 0px;
+        height: 100vh;
+        transition: all 0.7s;
+
+        ul {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          li {
+            width: 80%;
+            a {
+              color: $primary-light;
+              display: block;
+              width: 100%;
+            }
+            a:hover {
+              color: #ffffff99;
+            }
+          }
+        }
+      }
+    }
+}
+
+    .headcols {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // padding: 20px 0;
+      padding: 150px 0px 20px 0;
+
+      .col-1 {
+        flex: 1;
+        margin-bottom: 50px;
+        .caixaAjust1 {
+          .textH1 {
             font-size: 2rem;
-            cursor: pointer;
-            color: #01ADEF;
-            z-index: 98;
-            .fa-bars{
-                display: none;
-                z-index: 98;
+          }
+
+          button {
+            margin: 20px 0;
+            background-color: $terciary-ligth;
+            padding: 15px 60px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+
+          .iconsCaixa1 {
+            gap: 25px;
+
+            p {
+              font-size: 0.9rem;
+              i {
+                font-size: 1.3rem;
+              }
             }
-            .fa-xmark{
-                display: none;
-                z-index: 98;
-            }
+          }
         }
+      }
 
-        nav{
-            z-index: 95;
-            ul{
-                display: flex;
-                gap: 45px;
-
-                li{
-
-                    a{
-                        font-size: 1.2rem;
-                        transition: all 0.5s;
-                    }
-                    a:hover{
-                        color: #4c5879b5;
-                    }
-                }
-            }
-        }
-
-
-        img{
-            width: 110px;
-        }
+      .col-2 {
+        flex: 1;
+      }
     }
+    .headerContainerCards {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
 }
 
-    .headcols{
+@media (max-width: 576px) {
+  header {
+    height: auto;
+    .headerTopo {
+      .menuHamburguer {
+        .fa-bars {
+          display: flex;
+        }
+      }
+
+      nav {
+        background-color: $secondary-dark;
+        position: fixed;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 150px 0px 20px 0;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        top: 0;
+        width: 0px;
+        height: 100vh;
+        transition: all 0.7s;
 
-        .col-1{
-            flex: 1;
+        ul {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
 
-            .caixaAjust1{
-
-               .iconsCaixa1{
-                display: flex;
-                flex-direction: column;
-                gap: 35px;
-
-                p{
-
-                    i{
-                        padding-right: 7px;
-                        font-size: 1.5rem;
-                        color: $secondary-dark;
-                    }
-                }
-               }
+          li {
+            width: 80%;
+            a {
+              color: $primary-light;
+              display: block;
+              width: 100%;
             }
+            a:hover {
+              color: #ffffff99;
+            }
+          }
         }
-
-        .col-2{
-            flex: 1;
-        }
+      }
     }
 
-    .headerContainerCards{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 30px;
-        margin: 50px 0;
+    .headcols {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 150px 0px 20px 0;
 
-        .cardItem{
-            width: 300px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      .col-1 {
+        flex: 1;
+        margin-bottom: 50px;
+        .caixaAjust1 {
+          text-align: center;
+          .textH1 {
+            font-size: 1.3rem;
             text-align: center;
-            padding: 10px;
-            border-radius: 10px;
+          }
+
+          button {
+            font-size: 0.8rem;
+            margin: 35px 0;
+
+            // position: relative;
+            // left: 50%;
+            // transform: translateX(-50%);
+          }
+
+          .iconsCaixa1 {
+            text-align: start;
+            p {
+              font-size: 1rem;
+              i {
+                font-size: 1.3rem;
+              }
+            }
+          }
         }
+      }
     }
-}
-
-.opner{
-    width: 300px !important;
-}
-.hidden{
-    display: none;
-}
-.visible{
-    display: block;
-}
-
-@media (max-width: 768px){
-    header{
-        height: auto;
-        .headerTopo{
-            .menuHamburguer{
-
-                .fa-bars{
-                    display: flex;
-                }
-            }   
-
-            nav{
-                background-color: $secondary-dark;
-                position: fixed;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                right: 0;
-                top: 0;
-                width:0px;
-                height: 100vh;
-                transition: all 0.7s;
-
-                ul{
-                    width: 100%;
-                    flex-direction: column;
-                    align-items: center;
-                    text-align: center;
-
-                    li{
-                        width: 80%;
-                        a{
-                            color: $primary-light;
-                            display: block;
-                            width: 100%;
-                        }
-                        a:hover{
-                            color: #ffffff99;
-                        }
-                    }
-                }
-            }
-        }
-
-        .headcols{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            // padding: 20px 0;
-          padding: 150px 0px 20px 0;
-
-    
-            .col-1{
-                flex: 1;
-                margin-bottom: 50px;
-                .caixaAjust1{
-
-                    .textH1{
-                        font-size: 2rem;
-                    }
-                    
-                   button{
-                    margin: 20px 0;
-                    background-color: $terciary-ligth;
-                    padding: 15px 60px;
-                    border-radius: 5px;
-                    color: #fff;
-                    font-size: 1rem;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                   }
-    
-                   .iconsCaixa1{
-                    gap: 25px;
-    
-                    p{
-                        font-size: 0.9rem;
-                        i{
-                            font-size: 1.3rem;
-                        }
-                    }
-                   }
-                }
-            }
-    
-            .col-2{
-                flex: 1;
-            }
-        }
-        .headerContainerCards{
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
-}
-
-
-@media (max-width: 576px){
-    header{
-        height: auto;
-        .headerTopo{
-            .menuHamburguer{
-
-                .fa-bars{
-                    display: flex;
-                }
-            }   
-
-            nav{
-                background-color: $secondary-dark;
-                position: fixed;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                right: 0;
-                top: 0;
-                width:0px;
-                height: 100vh;
-                transition: all 0.7s;
-
-                ul{
-                    width: 100%;
-                    flex-direction: column;
-                    align-items: center;
-                    text-align: center;
-
-                    li{
-                        width: 80%;
-                        a{
-                            color: $primary-light;
-                            display: block;
-                            width: 100%;
-                        }
-                        a:hover{
-                            color: #ffffff99;
-                        }
-                    }
-                }
-            }
-        }
-
-        .headcols{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 150px 0px 20px 0;
-
-    
-            .col-1{
-                flex: 1;
-                margin-bottom: 50px;
-                .caixaAjust1{
-                    text-align: center;
-                    .textH1{
-                        font-size: 1.3rem;
-                        text-align: center;
-                    }
-                    
-                   button{
-                    font-size: 0.8rem;
-                    margin: 35px 0;
-
-                    // position: relative;
-                    // left: 50%;
-                    // transform: translateX(-50%);
-                   }
-    
-                   .iconsCaixa1{ 
-                    text-align: start;   
-                    p{
-                        font-size: 1rem;
-                        i{
-                            font-size: 1.3rem;
-                        }
-                    }
-                   }
-                }
-            }
-        }
-    }
+  }
 }
