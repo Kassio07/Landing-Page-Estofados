@@ -23,5 +23,18 @@ menuClose.addEventListener('click', ()=>{
 })
 
 
+cs('nav ul li a').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = c(`#${targetId}`);
+
+        window.scrollTo({
+            top: targetElement.offsetTop - 130, // Ajuste conforme necessário para compensar a altura do menu fixo
+            behavior: 'smooth'
+        });
+    });
+});
 
 

@@ -47,13 +47,13 @@ header .fixedTop .headerTopo nav ul {
 }
 header .fixedTop .headerTopo nav ul li a {
   font-size: 1.2rem;
-  transition: all 0.5s;
   font-weight: 600;
   position: relative;
   text-decoration: none;
+  transition: all 0.5s;
 }
 header .fixedTop .headerTopo nav ul li a:hover {
-  color: rgb(10, 16, 32);
+  color: rgba(22, 48, 121, 0.4039215686);
 }
 header .fixedTop .headerTopo img {
   width: 110px;
@@ -72,6 +72,7 @@ header .headcols .col-1 .caixaAjust1 .iconsCaixa1 {
   display: flex;
   flex-direction: column;
   gap: 35px;
+  padding-top: 20px;
 }
 header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p i {
   padding-right: 7px;
@@ -86,7 +87,7 @@ header .headerContainerCards {
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
-  margin: 200px 0 30px 0;
+  margin: 100px 0 30px 0;
 }
 header .headerContainerCards .cardItem {
   width: 300px;
@@ -268,7 +269,7 @@ main h2::after {
   left: 2px;
   width: 60px;
   height: 3px;
-  background-color: #00ADEF;
+  background-color: #00adef;
   border-radius: 10px;
 }
 main .about {
@@ -304,12 +305,12 @@ main .about .aboutCol2 div ul li {
   color: rgba(0, 0, 0, 0.6352941176);
 }
 main .about .aboutCol2 div ul li i {
-  color: #00ADEF;
+  color: #00adef;
   padding-right: 5px;
   font-size: 20px;
 }
 main .about .aboutCol2 div .textDestque {
-  color: #01ADEF;
+  color: #01adef;
 }
 main .services {
   margin-bottom: 200px;
@@ -325,7 +326,7 @@ main .services p {
 }
 main .services p i {
   font-size: 2rem;
-  color: #00ADEF;
+  color: #00adef;
 }
 main .services .serviceContainer {
   display: flex;
@@ -336,7 +337,7 @@ main .services .serviceContainer {
   gap: 30px;
 }
 main .services .serviceContainer .card-service-item {
-  width: 300px;
+  width: 280px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
   padding: 10px;
@@ -344,7 +345,7 @@ main .services .serviceContainer .card-service-item {
 }
 main .services .serviceContainer .card-service-item .title-service-item {
   color: #163179;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0 0 10px 0;
   font-weight: bold;
   height: 40px;
@@ -354,9 +355,14 @@ main .services .serviceContainer .card-service-item .text-service-item {
   font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.6352941176);
   height: 150px;
+  text-align: center;
+}
+main .services .serviceContainer .card-service-item .btn-service-item {
+  margin-top: 30px;
 }
 main .services .serviceContainer .card-service-item .btn-service-item button {
   font-size: 0.8rem;
+  margin: 0px 0;
 }
 
 .btnSite button {
@@ -372,14 +378,14 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
 
 @media (max-width: 576px) {
   main {
-    padding: 50px 0 0 0;
+    margin-top: 120px;
+  }
+  main .services .serviceContainer {
+    justify-content: center;
   }
   main .btnSite button {
     font-size: 0.8rem;
     margin: 35px 0;
-  }
-  main .about {
-    margin-top: 0px;
   }
   main .about .aboutCol2 div .escolha {
     font-size: 1.4rem;
@@ -388,6 +394,9 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
 @media (max-width: 768px) {
   main {
     padding: 0px 0 0 0;
+  }
+  main .services .serviceContainer {
+    justify-content: center;
   }
 }
 @media (max-width: 992px) {
@@ -426,7 +435,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0px 10px;
   height: auto;
