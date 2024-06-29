@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+}
+header .headerTopo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerTopo .menuHamburguer {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #01ADEF;
+  z-index: 98;
+}
+header .headerTopo .menuHamburguer .fa-bars {
+  display: none;
+  z-index: 99;
+}
+header .headerTopo .menuHamburguer .fa-xmark {
+  display: none;
+  z-index: 99;
+}
+header .headerTopo nav {
+  z-index: 95;
+}
+header .headerTopo nav ul {
+  display: flex;
+  gap: 45px;
+}
+header .headerTopo nav ul li a {
+  font-size: 1.2rem;
+  transition: all 0.5s;
+}
+header .headerTopo nav ul li a:hover {
+  color: rgba(76, 88, 121, 0.7098039216);
+}
+header .headerTopo img {
+  width: 110px;
+}
+header .headcols {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+header .headcols .col-1 {
+  flex: 1;
+}
+header .headcols .col-1 .caixaAjust1 button {
+  margin: 20px 0;
+  background-color: #1EC64E;
+  padding: 15px 60px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header .headcols .col-1 .caixaAjust1 .iconsCaixa1 {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p i {
+  padding-right: 7px;
+  font-size: 1.5rem;
+  color: #163179;
+}
+header .headcols .col-2 {
+  flex: 1;
+}
+
+.opner {
+  width: 300px !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  header .headerTopo .menuHamburguer .fa-bars {
+    display: flex;
+  }
+  header .headerTopo nav {
+    background-color: #163179;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+    width: 0px;
+    height: 100vh;
+    transition: all 0.7s;
+  }
+  header .headerTopo nav ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  header .headerTopo nav ul li {
+    width: 80%;
+  }
+  header .headerTopo nav ul li a {
+    color: #fff;
+    display: block;
+    width: 100%;
+  }
+  header .headerTopo nav ul li a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  header .headcols {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  header .headcols .col-1 {
+    flex: 1;
+    margin-bottom: 50px;
+  }
+  header .headcols .col-1 .caixaAjust1 .textH1 {
+    font-size: 2rem;
+  }
+  header .headcols .col-1 .caixaAjust1 button {
+    margin: 20px 0;
+    background-color: #1EC64E;
+    padding: 15px 60px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  header .headcols .col-1 .caixaAjust1 .iconsCaixa1 {
+    gap: 25px;
+  }
+  header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p {
+    font-size: 0.9rem;
+  }
+  header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p i {
+    font-size: 1.3rem;
+  }
+  header .headcols .col-2 {
+    flex: 1;
+  }
+}
+@media (max-width: 576px) {
+  header .headerTopo .menuHamburguer .fa-bars {
+    display: flex;
+  }
+  header .headerTopo nav {
+    background-color: #163179;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+    width: 0px;
+    height: 100vh;
+    transition: all 0.7s;
+  }
+  header .headerTopo nav ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  header .headerTopo nav ul li {
+    width: 80%;
+  }
+  header .headerTopo nav ul li a {
+    color: #fff;
+    display: block;
+    width: 100%;
+  }
+  header .headerTopo nav ul li a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  header .headcols {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  header .headcols .col-1 {
+    flex: 1;
+    margin-bottom: 50px;
+  }
+  header .headcols .col-1 .caixaAjust1 {
+    text-align: center;
+  }
+  header .headcols .col-1 .caixaAjust1 .textH1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  header .headcols .col-1 .caixaAjust1 button {
+    font-size: 0.8rem;
+    margin: 35px 0;
+  }
+  header .headcols .col-1 .caixaAjust1 .iconsCaixa1 {
+    text-align: start;
+  }
+  header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p {
+    font-size: 1rem;
+  }
+  header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p i {
+    font-size: 1.3rem;
+  }
+}
+body {
+  font-family: Poppins;
+  font-weight: normal;
+  background-color: #fff;
+  font-size: 16px;
+  position: relative;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 10px;
+  height: auto;
+}
+
+h1 {
+  color: #163179;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6352941176);
+}
+
+a {
+  font-family: Poppins;
+  font-weight: 500;
+  color: #163179;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
