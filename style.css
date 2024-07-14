@@ -79,6 +79,15 @@ header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p i {
   font-size: 1.5rem;
   color: #163179;
 }
+header .headcols .col-2 {
+  flex: 1;
+}
+header .headcols .col-2 .slideCard {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  overflow-x: hidden;
+}
 header .headcols .col-2 .slide {
   width: 600px;
   overflow: hidden;
@@ -110,12 +119,6 @@ header .headcols .col-2 .slide .slide--width .slide-item {
 }
 header .headcols .col-2 .slide .slide--width .slide-item img {
   width: 100%;
-}
-header .headcols .col-2 .slideCard {
-  display: flex;
-  flex-direction: row;
-  background-color: red;
-  overflow-x: hidden;
 }
 header .headerContainerCards {
   display: flex;
