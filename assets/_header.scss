@@ -86,6 +86,15 @@ header {
 
     .col-2 {
       flex: 1;
+
+      .slideCard{
+        display: flex;
+        flex-direction: row;
+         
+        background-color: red;
+        overflow-x: hidden;
+
+      }
     }
   }
 

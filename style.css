@@ -82,6 +82,12 @@ header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p i {
 header .headcols .col-2 {
   flex: 1;
 }
+header .headcols .col-2 .slideCard {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  overflow-x: hidden;
+}
 header .headerContainerCards {
   display: flex;
   flex-direction: row;
