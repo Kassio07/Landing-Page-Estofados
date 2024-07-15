@@ -86,15 +86,11 @@ header {
 
     .col-2 {
       flex: 1;
-
-      .slideCard{
+      .slide{
         display: flex;
         flex-direction: row;
          
-        background-color: red;
         overflow-x: hidden;
-      }
-      .slide{
         width: 600px;
         overflow: hidden;
         position: relative;
@@ -116,8 +112,9 @@ header {
         .slide--width{
           height: 330px;
           display: flex;
+          background-color: red;
           .slide-item{
-            width: 100%;
+            // width: 100%;
             height: inherit;
             // background-position: center;
             background-size: cover;

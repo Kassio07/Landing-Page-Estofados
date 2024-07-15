@@ -40,37 +40,27 @@ cs('nav ul li a').forEach(link => {
 
 // Slide header
 
-// let btnLeft = c('.fa-arrow-left');
-// let btnRight = c('.fa-arrow-right');
-// let slideItem = c('.slide-item');
+let totalSlides = cs('.slide-item').length;
+let courrentSlide= 0;
+c('.slide--width').style.width = `calc(100% * ${totalSlides})`;
 
-// btnLeft.addEventListener('click', (e)=>{
-//     slideItem.style.marginLeft = '-600px'
-// })
-
-
-let courrentSlide=0;
-
-function showSlide(index){
-    const slides = cs('.slide-item');
-    const totalSlide = slides.length;
-
-    if(index >= totalSlide){
-        courrentSlide = 0;
-    }else if(index < 0){
-        courrentSlide = totalSlide - 1;
-    }else{
-        courrentSlide = index
+function goPrev(){
+    courrentSlide--;
+    if(courrentSlide <0){
+        courrentSlide = totalSlides -1;  
     }
-
-
-    const offset = -courrentSlide * 600;
-    c('.slides--width').style.transform = `translateX(${offset}%)`;
+    updateMargin();
 }
 
-function moveSlide(direction){
-    showSlide(courrentSlide + direction)
-    alert('ok')
+function goNext(){
+    courrentSlide++;
+    if(courrentSlide > (totalSlides-1)){
+        courrentSlide = 0
+    }
+    updateMargin();
 }
 
-showSlide(courrentSlide);
+function updateMargin(){
+    let newMargin = (courrentSlide * `600px`)
+    c('.slide-item').style.marginLeft = `-${newMargin}px`;
+}

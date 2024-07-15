@@ -82,13 +82,10 @@ header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p i {
 header .headcols .col-2 {
   flex: 1;
 }
-header .headcols .col-2 .slideCard {
+header .headcols .col-2 .slide {
   display: flex;
   flex-direction: row;
-  background-color: red;
   overflow-x: hidden;
-}
-header .headcols .col-2 .slide {
   width: 600px;
   overflow: hidden;
   position: relative;
@@ -110,9 +107,9 @@ header .headcols .col-2 .slide .fa-arrow-right {
 header .headcols .col-2 .slide .slide--width {
   height: 330px;
   display: flex;
+  background-color: red;
 }
 header .headcols .col-2 .slide .slide--width .slide-item {
-  width: 100%;
   height: inherit;
   background-size: cover;
   background-repeat: no-repeat;
