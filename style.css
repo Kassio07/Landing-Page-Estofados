@@ -80,36 +80,47 @@ header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p i {
   color: #163179;
 }
 header .headcols .col-2 .slide {
-  width: 600px;
+  width: 38vw;
   overflow: hidden;
   position: relative;
 }
+header .headcols .col-2 .slide i {
+  position: absolute;
+  background-color: #00ADEF;
+  padding: 2px;
+  border-radius: 50%;
+  opacity: 0.2;
+}
 header .headcols .col-2 .slide .fa-solid {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   color: rgba(22, 48, 121, 0.3058823529);
-  font-size: 1.7rem;
-  padding: 7px;
+  font-size: 1.2rem;
   cursor: pointer;
-}
-header .headcols .col-2 .slide .fa-arrow-left {
-  line-height: 330px;
+  z-index: 99;
+  margin: 5px;
 }
 header .headcols .col-2 .slide .fa-arrow-right {
-  line-height: 330px;
   right: 0;
 }
 header .headcols .col-2 .slide .slide--width {
   height: 330px;
   display: flex;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  justify-content: center;
+  align-items: center;
+  transition: ease 1s;
+  overflow: hidden;
 }
 header .headcols .col-2 .slide .slide--width .slide-item {
   width: 100%;
   height: inherit;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
 }
-header .headcols .col-2 .slide .slide--width .slide-item img {
+header .headcols .col-2 .slide .slide--width .slide-item font img {
   width: 100%;
 }
 header .headerContainerCards {
