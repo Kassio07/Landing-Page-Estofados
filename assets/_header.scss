@@ -85,9 +85,17 @@ header {
     }
 
     .col-2 {
-      // flex: 1;
+      flex: 1;
       .slide{
+<<<<<<< HEAD
         width: 38vw;
+=======
+        display: flex;
+        flex-direction: row;
+         
+        overflow-x: hidden;
+        width: 600px;
+>>>>>>> bafa72d805942c8dcba88881b2f7ee1be5f2e4af
         overflow: hidden;
         position: relative;
 
@@ -115,13 +123,17 @@ header {
         .slide--width{
           height: 330px;
           display: flex;
+<<<<<<< HEAD
           justify-content: center;
           align-items: center;
           // padding: 10px;
           transition:ease 1s;
           overflow: hidden;
+=======
+          background-color: red;
+>>>>>>> bafa72d805942c8dcba88881b2f7ee1be5f2e4af
           .slide-item{
-            width: 100%;
+            // width: 100%;
             height: inherit;
             background-size: cover;
             background-repeat: no-repeat;

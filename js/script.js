@@ -68,3 +68,29 @@ setInterval(()=>{
 },3000)
 
 
+// Slide header
+
+let totalSlides = cs('.slide-item').length;
+let courrentSlide= 0;
+c('.slide--width').style.width = `calc(100% * ${totalSlides})`;
+
+function goPrev(){
+    courrentSlide--;
+    if(courrentSlide <0){
+        courrentSlide = totalSlides -1;  
+    }
+    updateMargin();
+}
+
+function goNext(){
+    courrentSlide++;
+    if(courrentSlide > (totalSlides-1)){
+        courrentSlide = 0
+    }
+    updateMargin();
+}
+
+function updateMargin(){
+    let newMargin = (courrentSlide * `600px`)
+    c('.slide-item').style.marginLeft = `-${newMargin}px`;
+}
