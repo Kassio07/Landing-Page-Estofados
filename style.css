@@ -101,6 +101,7 @@ header .headcols .col-2 .slide .fa-arrow-right {
 header .headcols .col-2 .slide .slide--width {
   height: 330px;
   display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 header .headcols .col-2 .slide .slide--width .slide-item {
   width: 100%;
