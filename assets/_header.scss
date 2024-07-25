@@ -1,5 +1,6 @@
 header {
   height: 100vh;
+  position: relative;
   .fixedTop {
     backdrop-filter: blur(20px);
     position: fixed;
@@ -60,9 +61,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 150px 0px 20px 0;
-
+    align-items: self-start;
+    padding: 190px 0px 20px 0;
+    height: 100vh;
+    position: relative;
     .col-1 {
       flex: 1;
 
@@ -88,8 +90,9 @@ header {
       flex: 1;
       .slide{
         width: 38vw;
-        display: flex;
-        flex-direction: row;
+        border-radius: 10px;
+        // display: flex;
+        // flex-direction: row;
          
         overflow-x: hidden;
         width: 600px;
@@ -126,7 +129,7 @@ header {
           transition:ease 1s;
           overflow: hidden;
           .slide-item{
-            // width: 100%;
+            width: 100%;
             height: inherit;
             background-size: cover;
             background-repeat: no-repeat;
@@ -147,8 +150,10 @@ header {
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
-    margin: 100px 0 30px 0;
+    // margin: 100px 0 30px 0;
 
+    position: absolute;
+    top: 90%;
     .cardItem {
       width: 300px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -167,6 +172,38 @@ header {
 }
 .visible {
   display: block;
+}
+
+@media (max-width:996px){
+  header{
+  .headcols{
+    align-items: center;
+    .slide{
+      display: none;
+    }
+
+    .btnSite{
+      text-align: center;
+    }
+  }
+  .headerContainerCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    // margin: 100px 0 30px 0;
+
+    position: absolute;
+    top: 70%;
+    .cardItem {
+      width: 300px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+}
 }
 
 @media (max-width: 768px) {
