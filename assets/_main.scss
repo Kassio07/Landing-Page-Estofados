@@ -2,21 +2,22 @@ main {
   // margin-top: 100px;
   padding: 350px 0 0 0;
   h2 {
-    padding: 20px 0;
+    padding: 60px 0;
     font-size: 1.8rem;
     text-transform: uppercase;
-    color: $secondary-dark;
+    color: $primary-light;
     position: relative;
+
   }
 
   h2::after {
     content: "";
     position: absolute;
-    bottom: 20px;
+    bottom: 65px;
     left: 2px;
     width: 60px;
     height: 3px;
-    background-color: #00adef;
+    background-color: $primary-light;
     border-radius: 10px;
   }
   .aboutBackground{
@@ -25,7 +26,11 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 30px;
+    .sobreDestaque{
+      color: $secondary-dark;
+      font-weight: 500;
+    }
+    
     .aboutCol1 {
       flex: 1;
       img {
@@ -54,14 +59,14 @@ main {
           li {
             color: #000000a2;
             i {
-              color: #00adef;
+              color: $primary-light;
               padding-right: 5px;
               font-size: 20px;
             }
           }
         }
         .textDestque {
-          color: #01adef;
+          color: $primary-light;
         }
       }
     }
@@ -72,7 +77,19 @@ main {
 
   .services {
     margin-bottom: 200px;
-
+    #service{
+      color:$secondary-dark;
+    }
+    #service::after {
+      content: "";
+      position: absolute;
+      bottom: 65px;
+      left: 2px;
+      width: 60px;
+      height: 3px;
+      background-color: $secondary-dark;
+      border-radius: 10px;
+    }
     p {
       text-align: center;
       padding: 50px 0;
