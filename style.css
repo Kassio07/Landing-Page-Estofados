@@ -136,12 +136,14 @@ header .headerContainerCards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: red;
+  max-width: 1280px;
   gap: 30px;
   position: absolute;
   top: 90%;
 }
 header .headerContainerCards .cardItem {
-  width: 300px;
+  max-width: 300px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
   padding: 10px;
