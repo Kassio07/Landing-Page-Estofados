@@ -64,7 +64,7 @@ header .headcols {
   flex-direction: row;
   justify-content: space-between;
   align-items: self-start;
-  padding: 190px 0px 20px 0;
+  padding: 120px 0px 20px 0;
   height: 100vh;
   position: relative;
 }
@@ -136,18 +136,17 @@ header .headerContainerCards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: red;
   max-width: 1280px;
   gap: 30px;
   position: absolute;
   top: 90%;
 }
 header .headerContainerCards .cardItem {
-  max-width: 300px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
+  flex: 1;
 }
 
 .opner {
@@ -164,7 +163,21 @@ header .headerContainerCards .cardItem {
 
 @media (max-width: 996px) {
   header .headcols {
+    padding: 0px 0px 80px 0;
     align-items: center;
+  }
+  header .headcols .col-1 .caixaAjust1 p {
+    text-align: center;
+  }
+  header .headcols .col-1 .caixaAjust1 .textH1 {
+    text-align: center;
+  }
+  header .headcols .col-1 .caixaAjust1 .iconsCaixa1 {
+    align-items: flex-start;
+    padding-top: 43px;
+  }
+  header .headcols .col-2 {
+    display: none;
   }
   header .headcols .slide {
     display: none;
@@ -175,6 +188,7 @@ header .headerContainerCards .cardItem {
   header .headerContainerCards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
     position: absolute;
@@ -186,6 +200,9 @@ header .headerContainerCards .cardItem {
     text-align: center;
     padding: 10px;
     border-radius: 10px;
+  }
+  header .headerContainerCards {
+    top: 90%;
   }
 }
 @media (max-width: 768px) {
@@ -240,7 +257,7 @@ header .headerContainerCards .cardItem {
   header .headcols .col-1 .caixaAjust1 button {
     margin: 20px 0;
     background-color: #1EC64E;
-    padding: 15px 60px;
+    padding: 15px 35px;
     border-radius: 5px;
     color: #fff;
     font-size: 1rem;
@@ -465,7 +482,7 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
 
 .btnSite button {
   background-color: #1EC64E;
-  padding: 15px 60px;
+  padding: 15px 35px;
   margin: 20px 0;
   border-radius: 5px;
   color: #fff;
