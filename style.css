@@ -164,10 +164,8 @@ header .headerContainerCards .cardItem {
 
 @media (max-width: 996px) {
   header .headcols {
+    flex-direction: column;
     align-items: center;
-  }
-  header .headcols .slide {
-    display: none;
   }
   header .headcols .btnSite {
     text-align: center;
