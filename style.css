@@ -358,6 +358,7 @@ header .headerContainerCards .cardItem {
   }
   header .headerContainerCards .cardItem {
     width: 500px;
+    margin: 10px;
   }
 }
 main {
