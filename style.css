@@ -283,6 +283,9 @@ header .headerContainerCards .cardItem {
     transform: translateX(-50%);
     width: 100%;
   }
+  header .headerContainerCards .cardItem {
+    max-width: 250px;
+  }
 }
 @media (max-width: 576px) {
   header {
@@ -379,7 +382,9 @@ main h2::after {
 }
 main .aboutBackground {
   background-color: #00adef;
-  padding-top: 300px;
+}
+main .aboutBackground #about {
+  padding-top: 350px;
 }
 main .aboutBackground .about {
   display: flex;
@@ -515,14 +520,8 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
   main .about .aboutCol2 div .escolha {
     font-size: 1.4rem;
   }
-  main .aboutBackground {
-    padding-top: 700px;
-  }
   main .aboutBackground #about {
-    padding-top: 350px;
-  }
-  main .aboutBackground .about {
-    padding-top: 50px;
+    padding-top: 100px;
   }
 }
 @media (max-width: 768px) {
@@ -530,7 +529,10 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
     justify-content: center;
   }
   main .aboutBackground {
-    padding-top: 700px;
+    margin-top: 400px;
+  }
+  main .aboutBackground #about {
+    padding-top: 0;
   }
   main .aboutBackground .about {
     flex-direction: column;
@@ -539,6 +541,7 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
 @media (max-width: 992px) {
   main {
     padding: 60px 0 0 0;
+    padding-top: 100px;
   }
   main .about .aboutCol1 {
     flex: 1.5;
@@ -547,7 +550,7 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
     flex: 2;
   }
   main .aboutBackground {
-    padding: 200px 0 0 0;
+    margin-top: 350px;
   }
 }
 @media (max-width: 1200px) {
@@ -570,6 +573,12 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
   }
   main .about .aboutCol2 .btnSite {
     text-align: center;
+  }
+  main .aboutBackground {
+    margin-top: 350px;
+  }
+  main .aboutBackground #about {
+    padding-top: 100px;
   }
 }
 body {

@@ -22,7 +22,11 @@ main {
   }
   .aboutBackground {
     background-color: #00adef;
-    padding-top: 300px;
+    // padding-top: 300px;
+    // margin-top: 350px;
+    #about{
+      padding-top: 350px;
+    }
     .about {
       display: flex;
       flex-direction: row;
@@ -162,7 +166,7 @@ main {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) { 
   main {
     margin-top: 120px;
     .services {
@@ -187,13 +191,13 @@ main {
       }
     }
     .aboutBackground{
-      padding-top: 700px;
+    // background-color: #fff;
+    // margin-top: 200px;
       #about{
-        padding-top: 350px;
-
+        padding-top: 100px;
       }
       .about{
-        padding-top: 50px;
+        // padding-top: 200px;
 
       }
 
@@ -210,9 +214,10 @@ main {
       }
     }
     .aboutBackground{
-      padding-top: 700px;
+      margin-top: 400px;
       #about{
-        
+        // padding-top: 300px;
+        padding-top: 0;
       }
       .about{
         flex-direction: column;
@@ -225,6 +230,8 @@ main {
 @media (max-width: 992px) {
   main {
     padding: 60px 0 0 0;
+    padding-top: 100px;
+
     .about {
       .aboutCol1 {
         flex: 1.5;
@@ -235,7 +242,7 @@ main {
       }
     }
     .aboutBackground{
-    padding: 200px 0 0 0;
+    margin-top: 350px;
 
     }
   }
@@ -244,6 +251,7 @@ main {
 @media (max-width: 1200px) {
   main {
     padding: 60px 0 0 0;
+  
 
     .about {
       flex-direction: column;
@@ -266,5 +274,13 @@ main {
         }
       }
     }
+    .aboutBackground{
+      margin-top: 350px;
+      #about{
+        padding-top: 100px;
+  
+      }
+  
+      }
   }
 }
