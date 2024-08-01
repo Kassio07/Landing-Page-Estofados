@@ -64,7 +64,7 @@ header .headcols {
   flex-direction: row;
   justify-content: space-between;
   align-items: self-start;
-  padding: 120px 0px 20px 0;
+  padding: 160px 0px 20px 0;
   height: 100vh;
   position: relative;
 }
@@ -162,11 +162,6 @@ header .headerContainerCards .cardItem {
 
 @media (max-width: 996px) {
   header .headcols {
-<<<<<<< HEAD
-    flex-direction: column;
-    align-items: center;
-  }
-=======
     padding: 0px 0px 80px 0;
     align-items: center;
   }
@@ -186,7 +181,6 @@ header .headerContainerCards .cardItem {
   header .headcols .slide {
     display: none;
   }
->>>>>>> 5a0d3903834e879a73c030221e8c121c4c229899
   header .headcols .btnSite {
     text-align: center;
   }
@@ -607,6 +601,7 @@ body {
   background-color: #fff;
   font-size: 16px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .container {

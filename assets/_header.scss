@@ -62,7 +62,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: self-start;
-    padding: 120px 0px 20px 0;
+    padding: 160px 0px 20px 0;
     height: 100vh;
     position: relative;
     .col-1 {
@@ -175,15 +175,6 @@ header {
   display: block;
 }
 
-<<<<<<< HEAD
-@media (max-width:996px){
-  header{
-  .headcols{
-    flex-direction: column;
-    align-items: center;
-    .slide{
-      // display: none;
-=======
 @media (max-width: 996px) {
   header {
     .headcols {
@@ -232,7 +223,6 @@ header {
         padding: 10px;
         border-radius: 10px;
       }
->>>>>>> 5a0d3903834e879a73c030221e8c121c4c229899
     }
 
     .headerContainerCards {
