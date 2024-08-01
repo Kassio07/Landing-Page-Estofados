@@ -24,7 +24,7 @@ main {
     background-color: #00adef;
     // padding-top: 300px;
     // margin-top: 350px;
-    #about{
+    #about {
       padding-top: 350px;
     }
     .about {
@@ -166,7 +166,7 @@ main {
   }
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
   main {
     margin-top: 120px;
     .services {
@@ -188,40 +188,46 @@ main {
             font-size: 1.4rem;
           }
         }
+        p {
+          font-size: 0.9rem;
+        }
+        .aboutTextCol2{
+          li{
+            font-size: 1rem;
+          }
+        }
       }
     }
-    .aboutBackground{
-    // background-color: #fff;
-    // margin-top: 200px;
-      #about{
+    .aboutBackground {
+      // background-color: #fff;
+      // margin-top: 200px;
+
+      #about {
         padding-top: 100px;
+        font-size: 1.4rem;
       }
-      .about{
+      .about {
         // padding-top: 200px;
-
       }
-
     }
   }
 }
 
 @media (max-width: 768px) {
   main {
-
     .services {
       .serviceContainer {
         justify-content: center;
       }
     }
-    .aboutBackground{
+    .aboutBackground {
       margin-top: 400px;
-      #about{
+      #about {
         // padding-top: 300px;
         padding-top: 0;
       }
-      .about{
+      .about {
         flex-direction: column;
-
       }
     }
   }
@@ -241,9 +247,8 @@ main {
         flex: 2;
       }
     }
-    .aboutBackground{
-    margin-top: 350px;
-
+    .aboutBackground {
+      margin-top: 350px;
     }
   }
 }
@@ -251,7 +256,6 @@ main {
 @media (max-width: 1200px) {
   main {
     padding: 60px 0 0 0;
-  
 
     .about {
       flex-direction: column;
@@ -274,13 +278,11 @@ main {
         }
       }
     }
-    .aboutBackground{
-      margin-top: 350px;
-      #about{
+    .aboutBackground {
+      margin-top: 460px;
+      #about {
         padding-top: 100px;
-  
       }
-  
-      }
+    }
   }
 }

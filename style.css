@@ -521,8 +521,15 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
   main .about .aboutCol2 div .escolha {
     font-size: 1.4rem;
   }
+  main .about .aboutCol2 p {
+    font-size: 0.9rem;
+  }
+  main .about .aboutCol2 .aboutTextCol2 li {
+    font-size: 1rem;
+  }
   main .aboutBackground #about {
     padding-top: 100px;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 768px) {
@@ -576,7 +583,7 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
     text-align: center;
   }
   main .aboutBackground {
-    margin-top: 350px;
+    margin-top: 460px;
   }
   main .aboutBackground #about {
     padding-top: 100px;
