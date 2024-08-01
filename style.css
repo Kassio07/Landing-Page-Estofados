@@ -64,7 +64,7 @@ header .headcols {
   flex-direction: row;
   justify-content: space-between;
   align-items: self-start;
-  padding: 190px 0px 20px 0;
+  padding: 120px 0px 20px 0;
   height: 100vh;
   position: relative;
 }
@@ -95,7 +95,7 @@ header .headcols .col-2 .slide {
 }
 header .headcols .col-2 .slide i {
   position: absolute;
-  background-color: #00ADEF;
+  background-color: #00adef;
   padding: 2px;
   border-radius: 50%;
   opacity: 0.2;
@@ -135,19 +135,17 @@ header .headcols .col-2 .slide .slide--width .slide-item font img {
 header .headerContainerCards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background-color: red;
   max-width: 1280px;
-  gap: 30px;
+  gap: 20px;
   position: absolute;
   top: 90%;
 }
 header .headerContainerCards .cardItem {
-  max-width: 300px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
+  flex: 1;
 }
 
 .opner {
@@ -164,16 +162,39 @@ header .headerContainerCards .cardItem {
 
 @media (max-width: 996px) {
   header .headcols {
+<<<<<<< HEAD
     flex-direction: column;
     align-items: center;
   }
+=======
+    padding: 0px 0px 80px 0;
+    align-items: center;
+  }
+  header .headcols .col-1 .caixaAjust1 p {
+    text-align: center;
+  }
+  header .headcols .col-1 .caixaAjust1 .textH1 {
+    text-align: center;
+  }
+  header .headcols .col-1 .caixaAjust1 .iconsCaixa1 {
+    align-items: flex-start;
+    padding-top: 43px;
+  }
+  header .headcols .col-2 {
+    display: none;
+  }
+  header .headcols .slide {
+    display: none;
+  }
+>>>>>>> 5a0d3903834e879a73c030221e8c121c4c229899
   header .headcols .btnSite {
     text-align: center;
   }
   header .headerContainerCards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     position: absolute;
     top: 70%;
@@ -184,6 +205,9 @@ header .headerContainerCards .cardItem {
     text-align: center;
     padding: 10px;
     border-radius: 10px;
+  }
+  header .headerContainerCards {
+    top: 90vh;
   }
 }
 @media (max-width: 768px) {
@@ -238,7 +262,7 @@ header .headerContainerCards .cardItem {
   header .headcols .col-1 .caixaAjust1 button {
     margin: 20px 0;
     background-color: #1EC64E;
-    padding: 15px 60px;
+    padding: 15px 35px;
     border-radius: 5px;
     color: #fff;
     font-size: 1rem;
@@ -256,10 +280,16 @@ header .headerContainerCards .cardItem {
   }
   header .headcols .col-2 {
     flex: 1;
+    display: none;
   }
   header .headerContainerCards {
     flex-wrap: wrap;
-    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  header .headerContainerCards .cardItem {
+    max-width: 250px;
   }
 }
 @media (max-width: 576px) {
@@ -328,9 +358,20 @@ header .headerContainerCards .cardItem {
   header .headcols .col-1 .caixaAjust1 .iconsCaixa1 p i {
     font-size: 1.3rem;
   }
+  header .headerContainerCards {
+    width: 100%;
+    gap: 0;
+  }
+  header .headerContainerCards .cardItem {
+    width: 500px;
+    margin: 10px;
+  }
+  header .headerContainerCards .noneCard {
+    display: none;
+  }
 }
 main {
-  padding: 350px 0 0 0;
+  padding: 60px 0 0 0;
 }
 main h2 {
   padding: 60px 0;
@@ -351,6 +392,9 @@ main h2::after {
 }
 main .aboutBackground {
   background-color: #00adef;
+}
+main .aboutBackground #about {
+  padding-top: 350px;
 }
 main .aboutBackground .about {
   display: flex;
@@ -463,7 +507,7 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
 
 .btnSite button {
   background-color: #1EC64E;
-  padding: 15px 60px;
+  padding: 15px 35px;
   margin: 20px 0;
   border-radius: 5px;
   color: #fff;
@@ -474,7 +518,7 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
 
 @media (max-width: 576px) {
   main {
-    margin-top: 120px;
+    margin-top: 10px;
   }
   main .services .serviceContainer {
     justify-content: center;
@@ -486,18 +530,38 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
   main .about .aboutCol2 div .escolha {
     font-size: 1.4rem;
   }
+  main .about .aboutCol2 p {
+    font-size: 0.9rem;
+  }
+  main .about .aboutCol2 .aboutTextCol2 {
+    font-size: 1rem;
+  }
+  main .about .aboutCol2 .aboutTextCol2 li {
+    font-size: 1rem;
+  }
+  main .aboutBackground #about {
+    padding-top: 100px;
+    font-size: 1.4rem;
+  }
 }
 @media (max-width: 768px) {
-  main {
-    padding: 0px 0 0 0;
-  }
   main .services .serviceContainer {
     justify-content: center;
+  }
+  main .aboutBackground {
+    margin-top: 400px;
+  }
+  main .aboutBackground #about {
+    padding-top: 0;
+  }
+  main .aboutBackground .about {
+    flex-direction: column;
   }
 }
 @media (max-width: 992px) {
   main {
-    padding: 1200px 0 0 0;
+    padding: 60px 0 0 0;
+    padding-top: 100px;
   }
   main .about .aboutCol1 {
     flex: 1.5;
@@ -505,8 +569,14 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
   main .about .aboutCol2 {
     flex: 2;
   }
+  main .aboutBackground {
+    margin-top: 350px;
+  }
 }
 @media (max-width: 1200px) {
+  main {
+    padding: 60px 0 0 0;
+  }
   main .about {
     flex-direction: column;
     justify-content: center;
@@ -523,6 +593,12 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
   }
   main .about .aboutCol2 .btnSite {
     text-align: center;
+  }
+  main .aboutBackground {
+    margin-top: 280px;
+  }
+  main .aboutBackground #about {
+    padding-top: 100px;
   }
 }
 body {

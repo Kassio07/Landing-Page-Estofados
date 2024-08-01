@@ -45,7 +45,7 @@ header {
               transition: all 0.5s;
             }
             a:hover {
-                color: #16307967;
+              color: #16307967;
             }
           }
         }
@@ -62,7 +62,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: self-start;
-    padding: 190px 0px 20px 0;
+    padding: 120px 0px 20px 0;
     height: 100vh;
     position: relative;
     .col-1 {
@@ -88,25 +88,25 @@ header {
 
     .col-2 {
       flex: 1;
-      .slide{
+      .slide {
         width: 38vw;
         border-radius: 10px;
         // display: flex;
         // flex-direction: row;
-         
+
         overflow-x: hidden;
         width: 600px;
         overflow: hidden;
         position: relative;
 
-        i{
+        i {
           position: absolute;
-          background-color: #00ADEF;
+          background-color: #00adef;
           padding: 2px;
           border-radius: 50%;
           opacity: 0.2;
         }
-        .fa-solid{
+        .fa-solid {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
@@ -116,27 +116,26 @@ header {
           z-index: 99;
           margin: 5px;
         }
-       
-        .fa-arrow-right{
+
+        .fa-arrow-right {
           right: 0;
         }
-        .slide--width{
+        .slide--width {
           height: 330px;
           display: flex;
           justify-content: center;
           align-items: center;
           // padding: 10px;
-          transition:ease 1s;
+          transition: ease 1s;
           overflow: hidden;
-          .slide-item{
+          .slide-item {
             width: 100%;
             height: inherit;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 10px;
-            font
-            img{
+            font img {
               width: 100%;
             }
           }
@@ -148,20 +147,20 @@ header {
   .headerContainerCards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: red;
+    // justify-content: center;
+    // align-items: center;
     max-width: 1280px;
-    gap: 30px;
-    // margin: 100px 0 30px 0;
+    gap: 20px;
 
     position: absolute;
     top: 90%;
     .cardItem {
-      max-width: 300px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       text-align: center;
       padding: 10px;
       border-radius: 10px;
+      // max-width: 300px;
+      flex: 1;
     }
   }
 }
@@ -176,6 +175,7 @@ header {
   display: block;
 }
 
+<<<<<<< HEAD
 @media (max-width:996px){
   header{
   .headcols{
@@ -183,77 +183,107 @@ header {
     align-items: center;
     .slide{
       // display: none;
+=======
+@media (max-width: 996px) {
+  header {
+    .headcols {
+      padding: 0px 0px 80px 0;
+      align-items: center;
+      .col-1 {
+        .caixaAjust1 {
+          p {
+            text-align: center;
+          }
+          .textH1 {
+            text-align: center;
+          }
+          .iconsCaixa1 {
+            align-items: flex-start;
+            padding-top: 43px;
+          }
+        }
+      }
+      .col-2 {
+        display: none;
+      }
+      .slide {
+        display: none;
+      }
+
+      .btnSite {
+        text-align: center;
+      }
+    }
+    .headerContainerCards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      gap: 30px;
+      // margin: 100px 0 30px 0;
+
+      position: absolute;
+      top: 70%;
+      .cardItem {
+        width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+      }
+>>>>>>> 5a0d3903834e879a73c030221e8c121c4c229899
     }
 
-    .btnSite{
-      text-align: center;
+    .headerContainerCards {
+      top: 90vh;
     }
   }
-  .headerContainerCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
-    // margin: 100px 0 30px 0;
-
-    position: absolute;
-    top: 70%;
-    .cardItem {
-      width: 300px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      text-align: center;
-      padding: 10px;
-      border-radius: 10px;
-    }
-  }
-}
 }
 
 @media (max-width: 768px) {
-  
   header {
     height: auto;
-    .fixedTop{
-
-    .headerTopo {
+    .fixedTop {
+      .headerTopo {
         .menuHamburguer {
-            .fa-bars {
-              display: flex;
-            }
+          .fa-bars {
+            display: flex;
           }
-      nav {
-        background-color: $secondary-dark;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        right: 0;
-        top: 0;
-        width: 0px;
-        height: 100vh;
-        transition: all 0.7s;
-
-        ul {
-          width: 100%;
-          flex-direction: column;
+        }
+        nav {
+          background-color: $secondary-dark;
+          position: fixed;
+          display: flex;
+          justify-content: center;
           align-items: center;
-          text-align: center;
+          right: 0;
+          top: 0;
+          width: 0px;
+          height: 100vh;
+          transition: all 0.7s;
 
-          li {
-            width: 80%;
-            a {
-              color: $primary-light;
-              display: block;
-              width: 100%;
-            }
-            a:hover {
-              color: #ffffff99;
+          ul {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            li {
+              width: 80%;
+              a {
+                color: $primary-light;
+                display: block;
+                width: 100%;
+              }
+              a:hover {
+                color: #ffffff99;
+              }
             }
           }
         }
       }
     }
-}
 
     .headcols {
       display: flex;
@@ -273,7 +303,7 @@ header {
           button {
             margin: 20px 0;
             background-color: $terciary-ligth;
-            padding: 15px 60px;
+            padding: 15px 35px;
             border-radius: 5px;
             color: #fff;
             font-size: 1rem;
@@ -296,11 +326,17 @@ header {
 
       .col-2 {
         flex: 1;
+        display: none;
       }
     }
     .headerContainerCards {
       flex-wrap: wrap;
-      justify-content: center;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      .cardItem {
+        max-width: 250px;
+      }
     }
   }
 }
@@ -383,6 +419,18 @@ header {
             }
           }
         }
+      }
+    }
+
+    .headerContainerCards {
+      width: 100%;
+      gap: 0;
+      .cardItem {
+        width: 500px;
+        margin: 10px;
+      }
+      .noneCard{
+        display: none;
       }
     }
   }

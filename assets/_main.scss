@@ -1,13 +1,13 @@
 main {
   // margin-top: 100px;
-  padding: 350px 0 0 0;
+  padding: 60px 0 0 0;
+
   h2 {
     padding: 60px 0;
     font-size: 1.8rem;
     text-transform: uppercase;
     color: $primary-light;
     position: relative;
-
   }
 
   h2::after {
@@ -20,65 +20,70 @@ main {
     background-color: $primary-light;
     border-radius: 10px;
   }
-  .aboutBackground{
+  .aboutBackground {
     background-color: #00adef;
-  .about {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    .sobreDestaque{
-      color: $secondary-dark;
-      font-weight: 500;
+    // padding-top: 300px;
+    // margin-top: 350px;
+    #about {
+      padding-top: 350px;
     }
-    
-    .aboutCol1 {
-      flex: 1;
-      img {
-        width: 90%;
+    .about {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .sobreDestaque {
+        color: $secondary-dark;
+        font-weight: 500;
       }
-    }
 
-    .aboutCol2 {
-      flex: 1;
-
-      div {
-        margin: 30px 0;
-
-        h3 {
-          color: $secondary-dark;
-          font-size: 1.3rem;
-          margin-bottom: 8px;
+      .aboutCol1 {
+        flex: 1;
+        img {
+          width: 90%;
         }
+      }
 
-        .escolha {
-          font-size: 1.8rem;
-        }
+      .aboutCol2 {
+        flex: 1;
 
-        ul {
-          margin-top: 8px;
-          li {
-            color: #000000a2;
-            i {
-              color: $primary-light;
-              padding-right: 5px;
-              font-size: 20px;
+        div {
+          margin: 30px 0;
+
+          h3 {
+            color: $secondary-dark;
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+          }
+
+          .escolha {
+            font-size: 1.8rem;
+          }
+
+          ul {
+            margin-top: 8px;
+            li {
+              color: #000000a2;
+              i {
+                color: $primary-light;
+                padding-right: 5px;
+                font-size: 20px;
+              }
             }
           }
-        }
-        .textDestque {
-          color: $primary-light;
+          .textDestque {
+            color: $primary-light;
+          }
         }
       }
     }
   }
-}
 
   // service
 
   .services {
     margin-bottom: 200px;
-    #service{
-      color:$secondary-dark;
+    #service {
+      color: $secondary-dark;
     }
     #service::after {
       content: "";
@@ -138,11 +143,11 @@ main {
 
         .btn-service-item {
           margin-top: 30px;
-        button {
-          font-size: 0.8rem;
-          margin: 0px 0;
+          button {
+            font-size: 0.8rem;
+            margin: 0px 0;
+          }
         }
-      }
       }
     }
   }
@@ -151,7 +156,7 @@ main {
 .btnSite {
   button {
     background-color: $terciary-ligth;
-    padding: 15px 60px;
+    padding: 15px 35px;
     margin: 20px 0;
     border-radius: 5px;
     color: #fff;
@@ -163,7 +168,7 @@ main {
 
 @media (max-width: 576px) {
   main {
-    margin-top: 120px;
+    margin-top:10px;
     .services {
       .serviceContainer {
         justify-content: center;
@@ -177,13 +182,34 @@ main {
       }
     }
     .about {
-
       .aboutCol2 {
         div {
           .escolha {
             font-size: 1.4rem;
           }
         }
+
+        p {
+          font-size: 0.9rem;
+        }
+        .aboutTextCol2 {
+          font-size: 1rem;
+          li {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .aboutBackground {
+      // background-color: #fff;
+      // margin-top: 200px;
+
+      #about {
+        padding-top: 100px;
+        font-size: 1.4rem;
+      }
+      .about {
+        // padding-top: 200px;
       }
     }
   }
@@ -191,19 +217,29 @@ main {
 
 @media (max-width: 768px) {
   main {
-    padding: 0px 0 0 0;
-
     .services {
-        .serviceContainer {
-          justify-content: center;
-        }
+      .serviceContainer {
+        justify-content: center;
       }
+    }
+    .aboutBackground {
+      margin-top: 400px;
+      #about {
+        // padding-top: 300px;
+        padding-top: 0;
+      }
+      .about {
+        flex-direction: column;
+      }
+    }
   }
 }
 
 @media (max-width: 992px) {
   main {
-    padding: 1200px 0 0 0;
+    padding: 60px 0 0 0;
+    padding-top: 100px;
+
     .about {
       .aboutCol1 {
         flex: 1.5;
@@ -213,11 +249,16 @@ main {
         flex: 2;
       }
     }
+    .aboutBackground {
+      margin-top: 350px;
+    }
   }
 }
 
 @media (max-width: 1200px) {
   main {
+    padding: 60px 0 0 0;
+
     .about {
       flex-direction: column;
       justify-content: center;
@@ -237,6 +278,12 @@ main {
         .btnSite {
           text-align: center;
         }
+      }
+    }
+    .aboutBackground {
+      margin-top: 280px;
+      #about {
+        padding-top: 100px;
       }
     }
   }
