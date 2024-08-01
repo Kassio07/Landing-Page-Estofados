@@ -168,7 +168,7 @@ main {
 
 @media (max-width: 576px) {
   main {
-    margin-top: 120px;
+    margin-top:10px;
     .services {
       .serviceContainer {
         justify-content: center;
@@ -188,11 +188,13 @@ main {
             font-size: 1.4rem;
           }
         }
+
         p {
           font-size: 0.9rem;
         }
-        .aboutTextCol2{
-          li{
+        .aboutTextCol2 {
+          font-size: 1rem;
+          li {
             font-size: 1rem;
           }
         }
@@ -279,7 +281,7 @@ main {
       }
     }
     .aboutBackground {
-      margin-top: 460px;
+      margin-top: 280px;
       #about {
         padding-top: 100px;
       }

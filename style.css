@@ -135,9 +135,8 @@ header .headcols .col-2 .slide .slide--width .slide-item font img {
 header .headerContainerCards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   max-width: 1280px;
-  gap: 30px;
+  gap: 20px;
   position: absolute;
   top: 90%;
 }
@@ -189,7 +188,7 @@ header .headerContainerCards .cardItem {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
     position: absolute;
     top: 70%;
@@ -355,10 +354,14 @@ header .headerContainerCards .cardItem {
   }
   header .headerContainerCards {
     width: 100%;
+    gap: 0;
   }
   header .headerContainerCards .cardItem {
     width: 500px;
     margin: 10px;
+  }
+  header .headerContainerCards .noneCard {
+    display: none;
   }
 }
 main {
@@ -509,7 +512,7 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
 
 @media (max-width: 576px) {
   main {
-    margin-top: 120px;
+    margin-top: 10px;
   }
   main .services .serviceContainer {
     justify-content: center;
@@ -523,6 +526,9 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
   }
   main .about .aboutCol2 p {
     font-size: 0.9rem;
+  }
+  main .about .aboutCol2 .aboutTextCol2 {
+    font-size: 1rem;
   }
   main .about .aboutCol2 .aboutTextCol2 li {
     font-size: 1rem;
@@ -583,7 +589,7 @@ main .services .serviceContainer .card-service-item .btn-service-item button {
     text-align: center;
   }
   main .aboutBackground {
-    margin-top: 460px;
+    margin-top: 280px;
   }
   main .aboutBackground #about {
     padding-top: 100px;
